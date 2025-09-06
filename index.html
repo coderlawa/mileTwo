@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Movementin - Your Gateway to Affordable Travel Deals">
+    <title>Movementin | Home</title>
+
+    <!-- FAVICON -->
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+
+    <!-- BOOTSTRAP CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+
+    <!-- CUSTOM STYLING -->
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body class="d-flex flex-column min-vh-100">
+    <!-- NAVIGATION -->
+    <nav id="navbar" class="navbar bg-opacity navbar-expand-sm fixed-top" aria-label="Main Navigation">
+        <div class="container">
+            <a class="navbar-brand nav-link" href="index.html"><i
+                    class="fa-solid fa-xl fa-suitcase-rolling"></i> MOVEMENTIN</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link links" aria-current="page" href="#deals" aria-label="Deals">Deals</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link links" href="#about" aria-label="About">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link links" href="#contact" aria-label="Contact">Contact Us</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- HEADER -->
+
+    <!-- MAIN -->
+
+    <!-- FOOTER CONTENT -->
+    <footer id="footer" class="container-fluid bg-opacity mt-auto">
+        <!-- social media links -->
+        <div id="socials" class="row w-100">
+            <div class="col-12">
+                <ul class="nav justify-content-center space-evenly">
+                    <li class="nav-item">
+                        <a class="nav-link links" href="https://www.facebook.com/" target="_blank" rel="noopener"
+                            aria-label="Vist Facebook (opens in new tab)"><i
+                                class="fab fa-facebook social-icon"></i></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link links" href="https://www.instagram.com/" target="_blank" rel="noopener"
+                            aria-label="Vist Instagram (opens in new tab)"><i class="fab fa-instagram social-icon"></i></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link links" href="https://www.pinterest.com/" target="_blank" rel="noopener"
+                            aria-label="Vist Pinterest (opens in new tab)"><i class="fab fa-pinterest social-icon"></i></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link links" href="https://www.twitter.com/" target="_blank" rel="noopener"
+                            aria-label="Vist Twitter (opens in new tab)"><i class="fab fa-x-twitter social-icon"></i></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!-- footer text -->
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center">
+                    <p>&copy; 2025 Tom Ogundimu. All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- BOOTSTRAP JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+
+    <!-- FONT AWESOME -->
+    <script src="https://kit.fontawesome.com/0a3337c4c9.js" crossorigin="anonymous"></script>
+
+    <!-- JavaScript code to ensure the Bootstrap mobile navbar collapses when navigating to in-page links -->
+    <script>
+        document
+            .querySelectorAll(".navbar-collapse .nav-link")
+            .forEach((link) => {
+                link.addEventListener("click", function (e) {
+                    let section = document.querySelector(e.target.getAttribute("href"));
+                    if (section) {
+                        e.preventDefault(); // Prevent default anchor click behavior
+                        let navbarHeight = document.querySelector(".navbar-toggler").offsetHeight;
+                        window.scroll({
+                            top: section.offsetTop - navbarHeight, // Adjust for navbar height
+                            behavior: "smooth",
+                        });
+                        document
+                            .querySelector(".navbar-collapse")
+                            .classList.remove("show"); // Collapse navbar
+                    }
+                });
+            });
+    </script>
+
+</body>
+
+</html>
