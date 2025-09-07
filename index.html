@@ -27,8 +27,10 @@
     <!-- NAVIGATION -->
     <nav id="navbar" class="navbar bg-opacity navbar-expand-sm fixed-top" aria-label="Main Navigation">
         <div class="container">
-            <a class="navbar-brand nav-link" href="index.html"><i
-                    class="fa-solid fa-xl fa-suitcase-rolling"></i> MOVEMENTIN</a>
+            <a id="logo" class="navbar-brand nav-link" href="index.html"><i
+                    class="fa-solid fa-xl fa-meteor fa-beat-fade"
+                    style="--fa-animation-duration: 2s; --fa-beat-fade-opacity: 0.1; --fa-beat-fade-scale: 1.5;"></i>
+                MOVEMENTIN</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -50,6 +52,59 @@
     </nav>
 
     <!-- HEADER -->
+    <!-- BOOKING FORM -->
+    <section id="booking-section">
+        <div id="flight-form" class="m-2 card container d-flex align-items-center justify-content-center">
+            <div class="row w-100 card-body">
+                <div class="col-12 mt-1 text-center">
+                    <h1 class="display-4 fw-bold">Find your flight here</h1>
+                </div>
+                <div>
+                    <form action="" method="GET">
+                        <div class="row g-3 justify-content-center m-3">
+                            <div class="btn-group col-12 col-md-6" role="group"
+                                aria-label="Basic radio toggle button group">
+                                <input type="radio" class="btn-check" name="btnradio" id="one-way" autocomplete="off">
+                                <label class="btn btn-outline-primary" for="one-way">One-Way</label>
+
+                                <input type="radio" class="btn-check" name="btnradio" id="round-trip" autocomplete="off"
+                                    checked>
+                                <label class="btn btn-outline-primary" for="round-trip">Round Trip</label>
+                            </div>
+                            <div class="col-12 col-md-6">
+                                <label for="departure" class="form-label">I want to fly from ...</label>
+                                <input type="text" class="form-control" id="departure" name="departure"
+                                    placeholder="Departure City" required>
+                            </div>
+                            <div class="col-12 col-md-6">
+                                <label for="destination" class="form-label">To arrive at ...</label>
+                                <input type="text" class="form-control" id="destination" name="destination"
+                                    placeholder="Destination City" required>
+                            </div>
+                            <div class="col-md-3">
+                                <!-- <label for="departure-date" class="form-label">On</label> -->
+                                <input type="date" class="form-control" id="departure-date" name="departure-date"
+                                    required>
+                            </div>
+                            <div class="col-md-3">
+                                <!-- <label for="return-date" class="form-label">Till</label> -->
+                                <input type="date" class="form-control" id="return-date" name="return-date" required>
+                            </div>
+                            <div class="col-md-6">
+                                <!-- <label for="" class="form-label">Submission Button</label> -->
+                                <button type="submit" class="btn btn-primary w-100"><i
+                                        class="fa-solid fa-magnifying-glass fa-beat-fade"
+                                        style="--fa-animation-duration: 2s; --fa-beat-fade-opacity: 0.1; --fa-beat-fade-scale: 1.2;"></i>
+                                    Search Flights</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+
+        </div>
+    </section>
 
     <!-- MAIN -->
 
@@ -66,15 +121,18 @@
                     </li>
                     <li class="nav-item">
                         <a class="nav-link links" href="https://www.instagram.com/" target="_blank" rel="noopener"
-                            aria-label="Vist Instagram (opens in new tab)"><i class="fab fa-instagram social-icon"></i></a>
+                            aria-label="Vist Instagram (opens in new tab)"><i
+                                class="fab fa-instagram social-icon"></i></a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link links" href="https://www.pinterest.com/" target="_blank" rel="noopener"
-                            aria-label="Vist Pinterest (opens in new tab)"><i class="fab fa-pinterest social-icon"></i></a>
+                            aria-label="Vist Pinterest (opens in new tab)"><i
+                                class="fab fa-pinterest social-icon"></i></a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link links" href="https://www.twitter.com/" target="_blank" rel="noopener"
-                            aria-label="Vist Twitter (opens in new tab)"><i class="fab fa-x-twitter social-icon"></i></a>
+                            aria-label="Vist Twitter (opens in new tab)"><i
+                                class="fab fa-x-twitter social-icon"></i></a>
                     </li>
                 </ul>
             </div>

@@ -5,14 +5,18 @@
 :root {
     --primary-font: 'Rubik', sans-serif;
     --secondary-font: 'Ubuntu', sans-serif;
-    --primary-color: #0f0a0a;
-    --secondary-color: #f5efed;
-    --accent-color: #f7cb15;
-    --other-accent: #bb4430;
-    --background-color: #71a2b6;
+    --primary-color: rgba(15, 10, 10, 1);
+    --secondary-color: rgba(245, 239, 237, 1);
+    --accent-color: rgba(247, 203, 21, 1);
+    --other-accent: rgba(187, 68, 48, 1);
+    --background-color: rgba(113, 162, 182, 0.6);
 }
 
 /* GLOBAL STYLES */
+#logo {
+    font-size: x-large;
+}
+
 body {
     background-color: var(--background-color);
 }
@@ -31,14 +35,48 @@ p {
     font-weight: bold;
 }
 
-/* NAVBAR */
-.nav-link {
+label {
+    font-family: var(--secondary-font);
+    color: var(--primary-color);
+    font-weight: bold;
+}
+
+button, .btn {
+    background-color: var(--accent-color);
+    border: none;
     color: var(--primary-color);
     font-weight: bolder;
 }
 
+button:hover, .btn:hover {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    font-weight: bolder;
+}
+
+/* NAVBAR */
+.nav-link {
+    color: var(--other-accent);
+    font-size: large;
+    font-weight: bolder;
+}
+
+.nav-link:hover {
+    color: var(--primary-color);
+    font-size: larger;
+    font-weight: bolder;
+}
+
 .navbar {
-    min-height: 10vh;
+    min-height: 7vh;
+    background-color: var(--secondary-color);
+    font-family: var(--secondary-font);
+}
+
+/* HEADER */
+#booking-section {
+    margin: auto;
+    padding: 1rem;
     background-color: var(--secondary-color);
 }
 
