@@ -41,14 +41,14 @@ label {
     font-weight: bold;
 }
 
-button, .btn {
+.btn {
     background-color: var(--accent-color);
     border: none;
     color: var(--primary-color);
     font-weight: bolder;
 }
 
-button:hover, .btn:hover {
+.btn:hover {
     background-color: var(--primary-color);
     color: var(--secondary-color);
     font-weight: bolder;
