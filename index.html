@@ -62,40 +62,61 @@
                 <div>
                     <form action="" method="GET">
                         <div class="row g-3 justify-content-center m-3">
-                            <div class="btn-group col-12 col-md-6" role="group"
-                                aria-label="Basic radio toggle button group">
-                                <input type="radio" class="btn-check" name="btnradio" id="one-way" autocomplete="off">
-                                <label class="btn btn-outline-primary" for="one-way">One-Way</label>
+                            <div class="col-12 col-md-6">
+                                <label class="form-label d-block mb-2">Flight Type</label>
+                                <div class="btn-group w-100" role="group" aria-label="Flight Type Selection">
+                                    <input type="radio" class="btn-check" name="flight-type" id="one-way" autocomplete="off">
+                                    <label class="btn btn-outline-primary" for="one-way">One-Way</label>
 
-                                <input type="radio" class="btn-check" name="btnradio" id="round-trip" autocomplete="off"
-                                    checked>
-                                <label class="btn btn-outline-primary" for="round-trip">Round Trip</label>
+                                    <input type="radio" class="btn-check" name="flight-type" id="round-trip" autocomplete="off" checked>
+                                    <label class="btn btn-outline-primary" for="round-trip">Round Trip</label>
+                                </div>
                             </div>
                             <div class="col-12 col-md-6">
                                 <label for="departure" class="form-label">I want to fly from ...</label>
                                 <input type="text" class="form-control" id="departure" name="departure"
                                     placeholder="Departure City" required>
                             </div>
+                            <div class="col-md-3">
+                                <label for="departure-date" class="form-label">On</label>
+                                <input type="date" class="form-control" id="departure-date" name="departure-date"
+                                    required>
+                            </div>
+                            <div class="col-md-3">
+                                <label for="return-date" class="form-label">Till</label>
+                                <input type="date" class="form-control" id="return-date" name="return-date" required>
+                            </div>
                             <div class="col-12 col-md-6">
                                 <label for="destination" class="form-label">To arrive at ...</label>
                                 <input type="text" class="form-control" id="destination" name="destination"
                                     placeholder="Destination City" required>
                             </div>
-                            <div class="col-md-3">
-                                <!-- <label for="departure-date" class="form-label">On</label> -->
-                                <input type="date" class="form-control" id="departure-date" name="departure-date"
-                                    required>
+                            <div class="col-12 col-md-6">
+                                <label class="form-label d-block mb-2">Flight Grade</label>
+                                <div class="btn-group w-100" role="group" aria-label="Flight Grade Selection">
+                                    <input type="radio" class="btn-check" name="flight-grade" id="economy" autocomplete="off">
+                                    <label class="btn btn-outline-primary" for="economy">Eco</label>
+
+                                    <input type="radio" class="btn-check" name="flight-grade" id="premium" autocomplete="off" checked>
+                                    <label class="btn btn-outline-primary" for="premium">Prem</label>
+
+                                    <input type="radio" class="btn-check" name="flight-grade" id="first" autocomplete="off">
+                                    <label class="btn btn-outline-primary" for="first">First</label>
+                                </div>
                             </div>
-                            <div class="col-md-3">
-                                <!-- <label for="return-date" class="form-label">Till</label> -->
-                                <input type="date" class="form-control" id="return-date" name="return-date" required>
+                            <div class="col-md-6 mt-5">
+                                <!-- <label for="" class="form-label">Submission Button</label> -->
+                                <button type="reset" class="btn btn-primary w-100"><i
+                                        class="fa-solid fa-eraser fa-beat-fade"
+                                        style="--fa-animation-duration: 2s; --fa-beat-fade-opacity: 0.1; --fa-beat-fade-scale: 1.2;"></i>
+                                    Clear All</button>
                             </div>
-                            <div class="col-md-6">
+                            <div class="col-md-6 mt-5">
                                 <!-- <label for="" class="form-label">Submission Button</label> -->
                                 <button type="submit" class="btn btn-primary w-100"><i
                                         class="fa-solid fa-magnifying-glass fa-beat-fade"
                                         style="--fa-animation-duration: 2s; --fa-beat-fade-opacity: 0.1; --fa-beat-fade-scale: 1.2;"></i>
-                                    Search Flights</button>
+                                    Find Flights</button>
                             </div>
                         </div>
                     </form>
