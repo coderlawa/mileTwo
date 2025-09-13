@@ -55,6 +55,13 @@ label {
     font-weight: bolder;
 }
 
+.btn-chk {
+    background-color: var(--primary-color);
+    border: 1px solid var(--primary-color);
+    color: var(--accent-color);
+    font-weight: bolder;
+}
+
 /* DESIGN TOOLS */
 .hide {
     display: none;
