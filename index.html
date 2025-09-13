@@ -53,7 +53,7 @@
 
     <!-- HEADER -->
     <!-- BOOKING FORM -->
-    <section id="booking-section">
+    <section id="booking-section" class="section">
         <div id="flight-form" class="m-2 card container d-flex align-items-center justify-content-center">
             <div class="row w-100 card-body">
                 <div class="col-12 mt-1 text-center">
@@ -65,10 +65,12 @@
                             <div class="col-12 col-md-6">
                                 <label class="form-label d-block mb-2">Flight Type</label>
                                 <div class="btn-group w-100" role="group" aria-label="Flight Type Selection">
-                                    <input type="radio" class="btn-check" name="flight-type" id="one-way" autocomplete="off">
+                                    <input type="radio" class="btn-check" name="flight-type" id="one-way"
+                                        autocomplete="off">
                                     <label class="btn btn-outline-primary" for="one-way">One-Way</label>
 
-                                    <input type="radio" class="btn-check" name="flight-type" id="round-trip" autocomplete="off" checked>
+                                    <input type="radio" class="btn-check" name="flight-type" id="round-trip"
+                                        autocomplete="off" checked>
                                     <label class="btn btn-outline-primary" for="round-trip">Round Trip</label>
                                 </div>
                             </div>
@@ -94,23 +96,37 @@
                             <div class="col-12 col-md-6">
                                 <label class="form-label d-block mb-2">Flight Grade</label>
                                 <div class="btn-group w-100" role="group" aria-label="Flight Grade Selection">
-                                    <input type="radio" class="btn-check" name="flight-grade" id="economy" autocomplete="off">
+                                    <input type="radio" class="btn-check" name="flight-grade" id="economy"
+                                        autocomplete="off">
                                     <label class="btn btn-outline-primary" for="economy">Eco</label>
 
-                                    <input type="radio" class="btn-check" name="flight-grade" id="premium" autocomplete="off" checked>
+                                    <input type="radio" class="btn-check" name="flight-grade" id="premium"
+                                        autocomplete="off" checked>
                                     <label class="btn btn-outline-primary" for="premium">Prem</label>
 
-                                    <input type="radio" class="btn-check" name="flight-grade" id="first" autocomplete="off">
+                                    <input type="radio" class="btn-check" name="flight-grade" id="first"
+                                        autocomplete="off">
                                     <label class="btn btn-outline-primary" for="first">First</label>
                                 </div>
                             </div>
-                            <div class="col-md-6 mt-5">
+                            <div class="col-12 col-md-6">
+                                <label for="passengers" class="form-label">Number of Passengers</label><br>
+
+                                <select id="passengers" name="passengers" class="form-select" required>
+                                    <option value="one">1</option>
+                                    <option value="two">2</option>
+                                    <option value="three">3</option>
+                                    <option value="four">4</option>
+                                    <option value="max">5+</option>
+                                </select>
+                            </div>
+                            <div class="col-md-3 mt-5 ms-auto">
                                 <button type="reset" class="btn btn-primary w-100"><i
                                         class="fa-solid fa-eraser fa-beat-fade"
                                         style="--fa-animation-duration: 2s; --fa-beat-fade-opacity: 0.1; --fa-beat-fade-scale: 1.2;"></i>
                                     Clear All</button>
                             </div>
-                            <div class="col-md-6 mt-5">
+                            <div class="col-md-4 mt-5">
                                 <button type="submit" class="btn btn-primary w-100"><i
                                         class="fa-solid fa-magnifying-glass fa-beat-fade"
                                         style="--fa-animation-duration: 2s; --fa-beat-fade-opacity: 0.1; --fa-beat-fade-scale: 1.2;"></i>
@@ -120,12 +136,19 @@
                     </form>
                 </div>
             </div>
-
-
         </div>
     </section>
 
     <!-- MAIN -->
+     <!-- INTEGRATED MAP -->
+      <section id="google-map" class="section">
+        <div>
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d19806.45397361459!2d-0.24168145!3d51.5285582!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48761cb4b6a8e6b5%3A0x7a5a4f6c8e4e6e0!2sLondon%2C%20UK!5e0!3m2!1sen!2sng!4v1701301234567!5m2!1sen!2sng"
+                width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+      </section>
 
     <!-- FOOTER CONTENT -->
     <footer id="footer" class="container-fluid bg-opacity mt-auto">

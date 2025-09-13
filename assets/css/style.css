@@ -19,6 +19,7 @@
 
 body {
     background-color: var(--background-color);
+    padding-top: 130px;
 }
 
 h1,
@@ -52,6 +53,16 @@ label {
     background-color: var(--primary-color);
     color: var(--secondary-color);
     font-weight: bolder;
+}
+
+/* DESIGN TOOLS */
+.hide {
+    display: none;
+}
+
+.section{
+    /* prevents navbar overlap */
+    padding-top: 4.5rem;
 }
 
 /* NAVBAR */
@@ -91,12 +102,3 @@ footer {
     font-size: 2rem;
 }
 
-/* DESIGN TOOLS */
-.hide {
-    display: none;
-}
-
-.section{
-    /* prevents navbar overlap */
-    padding-top: 4rem;
-}
