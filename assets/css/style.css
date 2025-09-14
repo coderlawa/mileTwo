@@ -55,21 +55,18 @@ label {
     font-weight: bolder;
 }
 
-.btn-chk {
-    background-color: var(--primary-color);
-    border: 1px solid var(--primary-color);
-    color: var(--accent-color);
-    font-weight: bolder;
-}
-
 /* DESIGN TOOLS */
 .hide {
     display: none;
 }
 
-.section{
+.section {
     /* prevents navbar overlap */
     padding-top: 4.5rem;
+}
+
+.bottom {
+    margin-bottom: 4.5rem;
 }
 
 /* NAVBAR */
@@ -96,6 +93,23 @@ label {
     margin: auto;
     padding: 1rem;
     background-color: var(--secondary-color);
+}
+
+#passengers,
+input::placeholder,
+input[type="text"],
+input[type="date"] {
+    font-family: var(--secondary-font);
+    color: var(--primary-color);
+    font-weight: bold;
+    font-size: 15px;
+}
+
+input[type="text"]:focus,
+input[type="date"]:focus,
+#passengers:focus {
+    border: 2px solid var(--accent-color);
+    box-shadow: 0 0 5px var(--accent-color);
 }
 
 /* FOOTER */

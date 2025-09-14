@@ -4,3 +4,5 @@ I had an issue with the radio buttons on the flight checking form. The Flight Ty
 
 The "Find Flights" button is intentionally longer than the "Clear All" button to draw attention to its importance.
 
+I styled the placeholder on the flight form using "input::placeholder" to target the element.
+
