@@ -23,7 +23,7 @@
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
 
-<body class="d-flex flex-column min-vh-100">
+<body class="d-flex flex-column min-vh-100 justify-content-center">
     <!-- NAVIGATION -->
     <nav id="navbar" class="navbar bg-opacity navbar-expand-sm fixed-top" aria-label="Main Navigation">
         <div class="container">
@@ -41,10 +41,10 @@
                         <a class="nav-link links" aria-current="page" href="#deals" aria-label="Deals">Deals</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link links" href="#about" aria-label="About">About Us</a>
+                        <a class="nav-link links" href="info.html#about" aria-label="About">About Us</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link links" href="#contact" aria-label="Contact">Contact Us</a>
+                        <a class="nav-link links" href="info.html#contact" aria-label="Contact">Contact Us</a>
                     </li>
                 </ul>
             </div>
@@ -53,11 +53,11 @@
 
     <!-- HEADER -->
     <!-- BOOKING FORM -->
-    <section id="booking-section" class="section">
-        <div id="flight-form" class="m-2 card container d-flex align-items-center justify-content-center">
+    <section id="booking-section" class="justify-content-center">
+        <div id="flight-form" class="card container d-flex align-items-center justify-content-center">
             <div class="row w-100 card-body">
                 <div class="col-12 mt-1 text-center">
-                    <h1 class="display-4 fw-bold">Find your flight here</h1>
+                    <h1 class="display-4 fw-bold">book your flight here</h1>
                 </div>
                 <div>
                     <form action="" method="GET">
@@ -77,7 +77,7 @@
                             <div class="col-12 col-md-6">
                                 <label for="departure" class="form-label">I want to fly from ...</label>
                                 <input type="text" class="form-control" id="departure" name="departure"
-                                    placeholder="Departure City" required>
+                                    placeholder="Departure City" autocomplete="off" required>
                             </div>
                             <div class="col-6 col-md-3">
                                 <label for="departure-date" class="form-label">Depart</label>
@@ -91,7 +91,7 @@
                             <div class="col-12 col-md-6">
                                 <label for="destination" class="form-label">To arrive at ...</label>
                                 <input type="text" class="form-control" id="destination" name="destination"
-                                    placeholder="Destination City" required>
+                                    placeholder="Destination City" autocomplete="off" required>
                             </div>
                             <div class="col-12 col-md-6">
                                 <label class="form-label d-block mb-2">Flight Grade</label>
@@ -143,11 +143,8 @@
     <!-- INTEGRATED MAP -->
     <section id="map-section" class="section">
         <div id="travel-map" class="ms-auto container-fluid align-items-center justify-content-center">
-            <div id="map" style="width:100%;height:490px;"></div>
+            <div id="map"></div>
         </div>
-
-        <!-- Place details card -->
-        <div id="place-details" class="place-card"></div>
     </section>
 
     <!-- DEALS -->
@@ -313,7 +310,7 @@
 
     <!-- MAP -->
     <script async
-        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC72IqfawWmzmlvB7ZOLZHLioUoxWieFD4&libraries=places&callback=initMap">
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC72IqfawWmzmlvB7ZOLZHLioUoxWieFD4&loading=async&libraries=places&callback=initMap">
         </script>
 
     <!-- BOOTSTRAP JS -->

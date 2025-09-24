@@ -6,3 +6,5 @@ The "Find Flights" button is intentionally longer than the "Clear All" button to
 
 I styled the placeholder on the flight form using "input::placeholder" to target the element.
 
+I used large / larger font-size for both the navbar & btn to add more motion to the site
+

@@ -53,6 +53,8 @@ label {
     background-color: var(--primary-color);
     color: var(--secondary-color);
     font-weight: bolder;
+    font-size: large;
+    transition: 0.5s;
 }
 
 /* DESIGN TOOLS */
@@ -80,6 +82,7 @@ label {
     color: var(--primary-color);
     font-size: larger;
     font-weight: bolder;
+    transition: 0.5s;
 }
 
 .navbar {
@@ -90,8 +93,9 @@ label {
 
 /* HEADER */
 #booking-section {
+    justify-self: center;
     margin: auto;
-    padding: 1rem;
+    padding: 1.5rem;
     background-color: var(--secondary-color);
 }
 
@@ -114,14 +118,20 @@ input[type="date"]:focus,
 
 /* MAP */
 
-#travel-map {
-    width: 100%;
-    height: 70vh;
+#map {
+    justify-self: center;
+    width: 83%;
+    height: 50vh;
     border: 2px solid var(--primary-color);
     border-radius: 8px;
-    box-shadow: 0 0 10px var(--primary-color);
-    margin-top: 1rem;
+    box-shadow: 0 0 20px var(--primary-color);
     position: relative;
+}
+
+#travel-map {
+    margin: auto;
+    padding: 1.5rem;
+    background-color: var(--secondary-color);
 }
 
 /* FOOTER */
