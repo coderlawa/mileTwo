@@ -57,6 +57,19 @@ label {
     transition: 0.5s;
 }
 
+/* Style checked Flight Type radio button */
+.btn-check:checked + .btn-outline-primary {
+    background-color: var(--other-accent);
+    color: var(--secondary-color);
+}
+
+/* Style Flight Type radio button on hover */
+.btn-check + .btn-outline-primary:hover {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    transition: 0.3s;
+}
+
 /* DESIGN TOOLS */
 .hide {
     display: none;
