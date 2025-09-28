@@ -8,3 +8,5 @@ I styled the placeholder on the flight form using "input::placeholder" to target
 
 I used large / larger font-size for both the navbar & btn to add more motion to the site
 
+[Autocomplete Form](https://developers.google.com/maps/documentation/javascript/legacy/supported_types#table3)
+

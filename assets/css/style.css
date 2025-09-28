@@ -141,12 +141,6 @@ input[type="date"]:focus,
     position: relative;
 }
 
-#travel-map {
-    margin: auto;
-    padding: 1.5rem;
-    background-color: var(--secondary-color);
-}
-
 /* FOOTER */
 footer {
     background-color: var(--secondary-color);

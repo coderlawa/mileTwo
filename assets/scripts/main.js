@@ -122,6 +122,17 @@ document.addEventListener("DOMContentLoaded", function () {
             if (destinationInput) {
               destinationInput.value = city;
             }
+            // Zoom in to the clicked location
+            map.setCenter(event.latLng);
+            map.setZoom(12);
+            if (marker !== undefined && marker !== null) {
+              marker.setMap(null);
+            }
+            marker = new google.maps.Marker({
+              map: map,
+              position: event.latLng,
+              title: city,
+            });
           } else {
             alert("City not found at this location.");
           }
