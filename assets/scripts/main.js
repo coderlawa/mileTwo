@@ -27,8 +27,7 @@ document.addEventListener("DOMContentLoaded", function () {
     var departureInput = document.getElementById("departure");
     if (departureInput) {
       var departureAutocomplete = new google.maps.places.Autocomplete(
-        departureInput,
-        { types: ["(cities)"] }
+        departureInput
       );
       // No event listener for departure
     }
@@ -37,8 +36,7 @@ document.addEventListener("DOMContentLoaded", function () {
     var destinationInput = document.getElementById("destination");
     if (destinationInput) {
       var destinationAutocomplete = new google.maps.places.Autocomplete(
-        destinationInput,
-        { types: ["(cities)"] }
+        destinationInput
       );
 
       destinationAutocomplete.addListener("place_changed", function () {

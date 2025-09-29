@@ -10,3 +10,5 @@ I used large / larger font-size for both the navbar & btn to add more motion to 
 
 [Autocomplete Form](https://developers.google.com/maps/documentation/javascript/legacy/supported_types#table3)
 
+[Geocoder](https://developers.google.com/maps/documentation/geocoding/overview)
+
