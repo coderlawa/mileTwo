@@ -139,6 +139,15 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   }
 
+  // RESET CONTACT US FORM
+  const contactForm = document.querySelector("#contact form");
+  const sendBtn = contactForm.querySelector('[data-bs-target="#messageModal"]');
+  if (contactForm && sendBtn) {
+    sendBtn.addEventListener("click", function () {
+      contactForm.reset();
+    });
+  }
+
   // Initialize the map when the window loads
   window.onload = initMap;
 });
