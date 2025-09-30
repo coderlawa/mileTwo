@@ -38,7 +38,8 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item">
-                        <a class="nav-link links" aria-current="page" href="index.html#deals" aria-label="Deals">Deals</a>
+                        <a class="nav-link links" aria-current="page" href="index.html#deals"
+                            aria-label="Deals">Deals</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link links" href="#about" aria-label="About">About Us</a>
@@ -98,15 +99,16 @@
                         </div>
                         <div class="mb-3">
                             <label for="email" class="form-label">Email</label>
-                            <input type="email" class="form-control" id="email" name="email"
-                                placeholder="Type your email here" required>
+                            <input type="email" class="form-control" id="email" name="email" placeholder="Your email"
+                                required>
                         </div>
                         <div class="mb-3">
                             <label for="message" class="form-label">Message</label>
                             <textarea class="form-control" id="message" name="message" rows="5"
                                 placeholder="Type your message here" required></textarea>
                         </div>
-                        <button type="submit" class="btn btn-primary w-100">Send Message</button>
+                        <button type="button" class="btn btn-primary w-100" data-bs-toggle="modal"
+                            data-bs-target="#messageModal">Send Message</button>
                     </form>
                 </div>
                 <div class="col-12 col-md-6 mt-4 mt-md-0">
@@ -159,6 +161,24 @@
             </div>
         </div>
     </footer>
+
+    <!-- MODAL -->
+    <div class="modal fade" id="messageModal" tabindex="-1" aria-labelledby="messageModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">Message Sent</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Your message has been received and we will get back to you shortly.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <!-- SCRIPTS -->
     <script src="assets/scripts/main.js"></script>
