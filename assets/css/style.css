@@ -104,6 +104,21 @@ label {
     font-family: var(--secondary-font);
 }
 
+/* DROPDOWN MENU */
+.dropdown-menu {
+    background-color: var(--secondary-color);
+    border: 1px solid var(--primary-color);
+}
+
+.dropdown-item {
+    color: var(--secondary-color);
+}
+
+.dropdown-item:hover {
+    background-color: var(--accent-color);
+    color: var(--secondary-color);
+}
+
 /* HEADER */
 #booking-section {
     justify-self: center;
@@ -144,6 +159,10 @@ input[type="email"]:focus,
     border-radius: 8px;
     box-shadow: 0 0 20px var(--primary-color);
     position: relative;
+}
+
+#about {
+    border: 1.5rem;
 }
 
 /* FOOTER */

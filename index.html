@@ -40,10 +40,16 @@
                     <li class="nav-item">
                         <a class="nav-link links" aria-current="page" href="#deals" aria-label="Deals">Deals</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link links" href="info.html#about" aria-label="About">About Us</a>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="info.html" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Information
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li class="dropdown-item">
+                        <a class="nav-link links" href="info.html" aria-label="About">About Us</a>
                     </li>
-                    <li class="nav-item">
+                    <li class="dropdown-item">
                         <a class="nav-link links" href="info.html#contact" aria-label="Contact">Contact Us</a>
                     </li>
                 </ul>
@@ -127,7 +133,7 @@
                                     Clear All</button>
                             </div>
                             <div class="col-md-4 mt-5">
-                                <button type="button" class="btn btn-primary w-100"><i
+                                <button type="submit" class="btn btn-primary w-100"><i
                                         class="fa-solid fa-magnifying-glass fa-beat-fade"
                                         style="--fa-animation-duration: 2s; --fa-beat-fade-opacity: 0.1; --fa-beat-fade-scale: 1.2;"></i>
                                     Find Flights</button>
@@ -205,7 +211,8 @@
                 <!-- Deal Card 1 -->
                 <div class="col-12 col-md-6 col-lg-4">
                     <div class="card h-100">
-                        <img src="https://images.pexels.com/photos/1850619/pexels-photo-1850619.jpeg" class="card-img-top" alt="Eiffel Tower in Paris">
+                        <img src="https://images.pexels.com/photos/1850619/pexels-photo-1850619.jpeg"
+                            class="card-img-top" alt="Eiffel Tower in Paris">
                         <div class="card-body d-flex flex-column">
                             <h5 class="card-title">Romantic Paris Getaway</h5>
                             <p class="card-text">Experience the City of Love with our exclusive 5-day
@@ -220,7 +227,8 @@
                 <!-- Deal Card 2 -->
                 <div class="col-12 col-md-6 col-lg-4">
                     <div class="card h-100">
-                        <img src="https://images.pexels.com/photos/2506923/pexels-photo-2506923.jpeg" class="card-img-top" alt="Tokyo Cityscape">
+                        <img src="https://images.pexels.com/photos/2506923/pexels-photo-2506923.jpeg"
+                            class="card-img-top" alt="Tokyo Cityscape">
                         <div class="card-body d-flex flex-column">
                             <h5 class="card-title">Tokyo Explorer</h5>
                             <p class="card-text">Discover the vibrant culture and technology of Tokyo with our
@@ -235,7 +243,8 @@
                 <!-- Deal Card 3 -->
                 <div class="col-12 col-md-6 col-lg-4">
                     <div class="card h-100">
-                        <img src="https://images.pexels.com/photos/1862000/pexels-photo-1862000.jpeg" class="card-img-top" alt="New York City Skyline">
+                        <img src="https://images.pexels.com/photos/1862000/pexels-photo-1862000.jpeg"
+                            class="card-img-top" alt="New York City Skyline">
                         <div class="card-body d-flex flex-column">
                             <h5 class="card-title">New York City Lights</h5>
                             <p class="card-text">Experience the hustle and bustle of NYC with our 4-day city
@@ -295,7 +304,8 @@
 
     <!-- MAP -->
     <script
-        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC72IqfawWmzmlvB7ZOLZHLioUoxWieFD4&loading=async&libraries=places&callback=initMap" async defer>
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC72IqfawWmzmlvB7ZOLZHLioUoxWieFD4&loading=async&libraries=places&callback=initMap"
+        async defer>
         </script>
 
     <!-- BOOTSTRAP JS -->
