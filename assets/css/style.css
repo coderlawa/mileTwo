@@ -23,7 +23,11 @@ body {
 }
 
 h1,
-h2 {
+h2,
+h3,
+h4,
+h5,
+h6 {
     font-family: var(--primary-font);
     color: var(--primary-color);
     text-transform: uppercase;
@@ -52,19 +56,19 @@ label {
 .btn:hover {
     background-color: var(--primary-color);
     color: var(--secondary-color);
-    font-weight: bolder;
+    /* font-weight: bolder;
     font-size: large;
-    transition: 0.5s;
+    transition: transform 1s; */
 }
 
 /* Style checked Flight Type radio button */
-.btn-check:checked + .btn-outline-primary {
+.btn-check:checked+.btn-outline-primary {
     background-color: var(--other-accent);
     color: var(--secondary-color);
 }
 
 /* Style Flight Type radio button on hover */
-.btn-check + .btn-outline-primary:hover {
+.btn-check+.btn-outline-primary:hover {
     background-color: var(--primary-color);
     color: var(--secondary-color);
     transition: 0.3s;
@@ -72,7 +76,11 @@ label {
 
 /* DESIGN TOOLS */
 .hide {
-    display: none;
+    visibility: hidden;
+    height: 0;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
 }
 
 .section {
@@ -172,7 +180,7 @@ footer {
     text-align: center;
     padding: 1rem;
 }
+
 .social-icon {
     font-size: 2rem;
 }
-

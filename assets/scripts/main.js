@@ -9,8 +9,8 @@ function initMap() {
     zoom: 9,
   });
 
-  // Reset map and marker when form is reset
-  var flightForm = document.querySelector("#flight-form form");
+  // RESET BOOKING FORM & MAP
+  var flightForm = document.querySelector("#flight-form-div form");
   if (flightForm) {
     flightForm.addEventListener("reset", function () {
       map.setCenter(defaultLocation);
@@ -139,6 +139,30 @@ function initMap() {
 }
 
 document.addEventListener("DOMContentLoaded", function () {
+  // HIDE RETURN DATE IF ONE-WAY IS SELECTED
+  const oneWayRadio = document.getElementById("one-way");
+  const roundTripRadio = document.getElementById("round-trip");
+  const returnDateGroup = document.getElementById("returnDateGroup");
+  if (oneWayRadio && returnDateGroup) {
+  oneWayRadio.addEventListener("change", function () {
+    if (this.checked) {
+      returnDateGroup.classList.add("hide");
+      const returnDateInput = document.getElementById("return-date");
+      if (returnDateInput) {
+        returnDateInput.value = "";
+      }
+    }
+  });
+}
+
+if (roundTripRadio && returnDateGroup) {
+  roundTripRadio.addEventListener("change", function () {
+    if (this.checked) {
+      returnDateGroup.classList.remove("hide");
+    }
+  });
+}
+
   // RESET CONTACT US FORM
   const contactForm = document.querySelector("#contact form");
   const sendBtn = contactForm.querySelector('[data-bs-target="#messageModal"]');
@@ -148,5 +172,6 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   }
 });
+
 // Initialize the map when the window loads
 window.onload = initMap;

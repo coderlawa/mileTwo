@@ -47,12 +47,12 @@
                         </a>
                         <ul class="dropdown-menu">
                             <li class="dropdown-item">
-                        <a class="nav-link links" href="info.html" aria-label="About">About Us</a>
-                    </li>
-                    <li class="dropdown-item">
-                        <a class="nav-link links" href="info.html#contact" aria-label="Contact">Contact Us</a>
-                    </li>
-                </ul>
+                                <a class="nav-link links" href="info.html" aria-label="About">About Us</a>
+                            </li>
+                            <li class="dropdown-item">
+                                <a class="nav-link links" href="info.html#contact" aria-label="Contact">Contact Us</a>
+                            </li>
+                        </ul>
             </div>
         </div>
     </nav>
@@ -60,17 +60,17 @@
     <!-- HEADER -->
     <!-- BOOKING FORM -->
     <section id="booking-section" class="justify-content-center">
-        <div id="flight-form" class="card container d-flex align-items-center justify-content-center">
+        <div id="flight-form-div" class="card container d-flex align-items-center justify-content-center">
             <div class="row w-100 card-body">
                 <div class="col-12 mt-1 text-center">
                     <h1 class="display-4 fw-bold">book your flight here</h1>
                 </div>
                 <div>
-                    <form action="" method="GET">
+                    <form id="flight-form" action="" method="GET">
                         <div class="row g-3 justify-content-center m-3">
                             <div class="col-12 col-md-6">
-                                <label class="form-label d-block mb-2">Flight Type</label>
-                                <div class="btn-group w-100" role="group" aria-label="Flight Type Selection">
+                                <label class="form-label d-block mb-2" id="flightTypeLabel">Flight Type</label>
+                                <div id="flightTypeGroup" class="btn-group w-100" role="group" aria-label="Flight Type Selection">
                                     <input type="radio" class="btn-check" name="flight-type" id="one-way"
                                         autocomplete="off">
                                     <label class="btn btn-outline-primary" for="one-way">One-Way</label>
@@ -81,26 +81,26 @@
                                 </div>
                             </div>
                             <div class="col-12 col-md-6">
-                                <label for="departure" class="form-label">I want to fly from ...</label>
+                                <label for="departure" class="form-label">Departure</label>
                                 <input type="text" class="form-control" id="departure" name="departure"
-                                    placeholder="Departure City" autocomplete="off" required>
+                                    placeholder="Where from?" autocomplete="off" required>
                             </div>
                             <div class="col-6 col-md-3">
                                 <label for="departure-date" class="form-label">Departure Date</label>
                                 <input type="date" class="form-control" id="departure-date" name="departure-date"
                                     required>
                             </div>
-                            <div class="col-6 col-md-3">
+                            <div id="returnDateGroup" class="col-6 col-md-3">
                                 <label for="return-date" class="form-label">Return Date</label>
                                 <input type="date" class="form-control" id="return-date" name="return-date" required>
                             </div>
                             <div class="col-12 col-md-6">
-                                <label for="destination" class="form-label">To arrive at ...</label>
+                                <label for="destination" class="form-label">Destination</label>
                                 <input type="text" class="form-control" id="destination" name="destination"
-                                    placeholder="Destination City" autocomplete="off" required>
+                                    placeholder="Where to?" autocomplete="off" required>
                             </div>
                             <div class="col-12 col-md-6">
-                                <label class="form-label d-block mb-2">Flight Grade</label>
+                                <label class="form-label d-block mb-2" id="flightGradeLabel">Flight Grade</label>
                                 <div class="btn-group w-100" role="group" aria-label="Flight Grade Selection">
                                     <input type="radio" class="btn-check" name="flight-grade" id="economy"
                                         autocomplete="off">
@@ -127,14 +127,14 @@
                                 </select>
                             </div>
                             <div class="col-md-3 mt-5 ms-auto">
-                                <button type="reset" class="btn btn-primary w-100"><i
+                                <button id="reset-form" type="reset" class="btn btn-primary w-100"><i
                                         class="fa-solid fa-eraser fa-beat-fade"
                                         style="--fa-animation-duration: 2s; --fa-beat-fade-opacity: 0.1; --fa-beat-fade-scale: 1.2;"></i>
                                     Clear All</button>
                             </div>
                             <div class="col-md-4 mt-5">
-                                <button type="submit" class="btn btn-primary w-100"><i
-                                        class="fa-solid fa-magnifying-glass fa-beat-fade"
+                                <button id="find-flights" name="find-flights" type="submit" class="btn btn-primary w-100" data-bs-toggle="modal"
+                                    data-bs-target="#flightsModal"><i class="fa-solid fa-magnifying-glass fa-beat-fade"
                                         style="--fa-animation-duration: 2s; --fa-beat-fade-opacity: 0.1; --fa-beat-fade-scale: 1.2;"></i>
                                     Find Flights</button>
                             </div>
@@ -157,7 +157,7 @@
     <section id="deals" class="section bottom">
         <div class="container">
             <!-- CAROUSEL -->
-            <div id="carouselItems" class="carousel slide d-none">
+            <div id="carouselItems" class="carousel slide hide mb-4" data-bs-ride="carousel">
                 <div class="carousel-indicators">
                     <button type="button" data-bs-target="#carouselItems" data-bs-slide-to="0" class="active"
                         aria-current="true" aria-label="Slide 1"></button>
@@ -298,6 +298,21 @@
             </div>
         </div>
     </footer>
+
+    <!-- FLIGHT SEARCH MODAL -->
+    <div class="modal fade" id="flightsModal" tabindex="-1" aria-labelledby="flightsModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="flightsModalLabel">Available Flights</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body" id="flightsModalBody">
+                    <!-- Flight results will be injected here -->
+                </div>
+            </div>
+        </div>
+    </div>
 
     <!-- SCRIPTS -->
     <script src="assets/scripts/main.js"></script>
