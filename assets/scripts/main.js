@@ -82,7 +82,7 @@ function initMap() {
     });
   }
 
-  // Click event on map to select city
+  // CLICK ON MAP TO SELECT DESTINATION
   google.maps.event.addListener(map, "click", function (event) {
     var geocoder = new google.maps.Geocoder();
     geocoder.geocode({ location: event.latLng }, function (results, status) {
@@ -139,31 +139,32 @@ function initMap() {
 }
 
 document.addEventListener("DOMContentLoaded", function () {
-  // HIDE RETURN DATE IF ONE-WAY IS SELECTED
+  // HIDES RETURN DATE IF ONE-WAY IS SELECTED
   const oneWayRadio = document.getElementById("one-way");
   const roundTripRadio = document.getElementById("round-trip");
   const returnDateGroup = document.getElementById("returnDateGroup");
   if (oneWayRadio && returnDateGroup) {
-  oneWayRadio.addEventListener("change", function () {
-    if (this.checked) {
-      returnDateGroup.classList.add("hide");
-      const returnDateInput = document.getElementById("return-date");
-      if (returnDateInput) {
-        returnDateInput.value = "";
+    oneWayRadio.addEventListener("change", function () {
+      if (this.checked) {
+        returnDateGroup.classList.add("hide");
+        const returnDateInput = document.getElementById("return-date");
+        if (returnDateInput) {
+          returnDateInput.value = "";
+        }
       }
-    }
-  });
-}
+    });
+  }
 
-if (roundTripRadio && returnDateGroup) {
-  roundTripRadio.addEventListener("change", function () {
-    if (this.checked) {
-      returnDateGroup.classList.remove("hide");
-    }
-  });
-}
+  // SHOWS RETURN DATE IF ROUND-TRIP IS SELECTED
+  if (roundTripRadio && returnDateGroup) {
+    roundTripRadio.addEventListener("change", function () {
+      if (this.checked) {
+        returnDateGroup.classList.remove("hide");
+      }
+    });
+  }
 
-  // RESET CONTACT US FORM
+  // RESETS CONTACT US FORM
   const contactForm = document.querySelector("#contact form");
   const sendBtn = contactForm.querySelector('[data-bs-target="#messageModal"]');
   if (contactForm && sendBtn) {
