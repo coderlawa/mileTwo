@@ -13,3 +13,5 @@ I used large / larger font-size for both the navbar & btn to add more motion to 
 [Geocoder](https://developers.google.com/maps/documentation/geocoding/overview)
 
 [Infinite Scroller](https://www.youtube.com/watch?v=KD1Yo8a_Qis)
+
+[Youtube Search](https://www.youtube.com/results?search_query=infinite+horizontal+images+scroll+html+css)

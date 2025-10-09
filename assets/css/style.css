@@ -195,7 +195,7 @@ input[type="email"]:focus,
     align-items: center;
     justify-content: center;
     gap: 1em;
-    animation: scroller 20s linear infinite;
+    animation: scroller 30s linear infinite;
     padding-right: 1em;
 }
 
@@ -208,6 +208,15 @@ input[type="email"]:focus,
     border-radius: .2em;
     text-align: center;
     align-content: center;
+}
+
+#infinite-scroll .info-cards img {
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+    width: 100%;
+    height: auto;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
 }
 
 @keyframes scroller {
