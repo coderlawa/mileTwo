@@ -153,7 +153,7 @@ input[type="date"]:focus,
 #passengers:focus,
 input[type="email"]:focus,
 #message:focus {
-    border: 2px solid var(--accent-color);
+    border: 1px solid var(--accent-color);
     box-shadow: 0 0 5px var(--accent-color);
 }
 
