@@ -69,6 +69,63 @@ MOVEMENTIN is a web service for finding airline tickets and holiday bundles base
 * Image of scenic locations scrolling continuously
 * 
 
+### User Stories
+
+#### Client Goals
+
+* 
+
+#### First Time Visitor Goals
+
+* 
+
+#### Frequent & Returning Visitor Goals
+
+* Account creation is a future development opportunity for Movementin.
+
+---
+
+## Design
+
+### Color Scheme
+
+![MOVEMENTIN websit color palette](assets/images/colors.png)
+
+This website uses a palette of extremely contrasting colors for the purpose of keeping site users visually stimulated. This color scheme was sourced from [Coolors](https://coolors.co/).
+
+### Typography
+
+[Google Fonts](https://fonts.google.com/) has been used exclusively for all the words presented on this website. See fonts used listed below;
+
+* Primary Font - [Rubik](https://fonts.google.com/specimen/Rubik)
+* Secondary Font - [Ubuntu](https://fonts.google.com/specimen/Ubuntu)
+
+Both fonts are backed-up by sans-serif.
+
+### Imagery
+
+The images on this website were sourced from [Pexels](https://www.pexels.com/) - a royalty free stock photos and videos web service.
+
+### Wireframes
+
+Wireframes were created for Mobile & Tablet/Desktop.
+
+#### Home Page
+* Mobile Home Page
+![Home Page - mobile](assets/images/Home(sm).webp)
+* Tablet / Desktop Home Page
+![Home Page - tablet / desktop](assets/images/Home(big).webp)
+
+#### Information Page
+* Mobile Information Page
+![Information Page - mobile](assets/images/Information(sm).webp)
+* Tablet / Desktop Information Page
+![Information Page - tablet / desktop](assets/images/Infomation(big).webp)
+
+### Features
+
+
+
 I used mt-1 to space the top of "Book Your Flight Here" & m-3
 
 I had an issue with the radio buttons on the flight checking form. The Flight Type and the Flight Grade classed because they we all shared the same NAME - changing names of elements to fit their group solves this problem.
