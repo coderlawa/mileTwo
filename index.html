@@ -70,7 +70,8 @@
                         <div class="row g-3 justify-content-center m-3">
                             <div class="col-12 col-md-6">
                                 <label class="form-label d-block mb-2" id="flightTypeLabel">Flight Type</label>
-                                <div id="flightTypeGroup" class="btn-group w-100" role="group" aria-label="Flight Type Selection">
+                                <div id="flightTypeGroup" class="btn-group w-100" role="group"
+                                    aria-label="Flight Type Selection">
                                     <input type="radio" class="btn-check" name="flight-type" id="one-way"
                                         autocomplete="off">
                                     <label class="btn btn-outline-primary" for="one-way">One-Way</label>
@@ -133,7 +134,8 @@
                                     Clear All</button>
                             </div>
                             <div class="col-md-3 mt-5">
-                                <button id="find-flights" name="find-flights" type="submit" class="btn btn-primary w-100" data-bs-toggle="modal"
+                                <button id="find-flights" name="find-flights" type="submit"
+                                    class="btn btn-primary w-100" data-bs-toggle="modal"
                                     data-bs-target="#flightsModal"><i class="fa-solid fa-magnifying-glass fa-beat-fade"
                                         style="--fa-animation-duration: 2s; --fa-beat-fade-opacity: 0.1; --fa-beat-fade-scale: 1.2;"></i>
                                     Find Flights</button>
@@ -293,11 +295,14 @@
         <div class="container">
             <div class="row">
                 <div class="col-12 text-center">
-                    <p>&copy; 2025 Tom Ogundimu. All rights reserved.</p>
+                    <p>&copy; <span id="currentYear"></span> CODERLAWA. All rights reserved.</p>
                 </div>
             </div>
         </div>
     </footer>
+
+    <!-- Back to Top Button -->
+    <button id="backToTop" aria-label="backToTopButton"><i class="fa-solid fa-circle-up fa-bounce"></i></button>
 
     <!-- FLIGHT SEARCH MODAL -->
     <div class="modal fade" id="flightsModal" tabindex="-1" aria-labelledby="flightsModalLabel" aria-hidden="true">
@@ -317,6 +322,11 @@
     <!-- SCRIPTS -->
     <script src="assets/scripts/main.js"></script>
     <script src="assets/scripts/index.js"></script>
+
+    <!-- Set current year -->
+    <script>
+        document.getElementById('currentYear').textContent = new Date().getFullYear();
+    </script>
 
     <!-- MAP -->
     <script
@@ -352,6 +362,28 @@
                     }
                 });
             });
+    </script>
+
+    <!-- JavaScript code for Back to Top Button -->
+    <script>
+        const backToTopButton = document.getElementById("backToTop");
+
+        // Show button when scrolling down
+        window.addEventListener("scroll", () => {
+            if (window.scrollY > 100) {
+                backToTopButton.style.display = "block";
+            } else {
+                backToTopButton.style.display = "none";
+            }
+        });
+
+        // Scroll smoothly to the top when clicked
+        backToTopButton.addEventListener("click", () => {
+            window.scrollTo({
+                top: 0,
+                behavior: "smooth"
+            });
+        });
     </script>
 
 </body>

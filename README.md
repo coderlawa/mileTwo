@@ -44,6 +44,7 @@ This website has been built to accomodate most visitors needs, regardless of the
     * [Solved Bugs](#solved-bugs)
     * [Known Bugs](#known-bugs)
     * [Lighthouse](#lighthouse)
+    * [JSHint](#jshint)
 
 * [Credits](#credits)
 

@@ -77,21 +77,25 @@
     <section id="infinite-scroll-section" class="section">
         <div id="infinite-scroll" class="carousel" aria-label="Infinite Scrolling Images">
             <div class="group">
-                <div class="info-cards"><img src="assets/images/pexels-photo-1.webp" alt="Photo by Joshua Woroniecki"></div>
+                <div class="info-cards"><img src="assets/images/pexels-photo-1.webp" alt="Photo by Joshua Woroniecki">
+                </div>
                 <div class="info-cards"><img src="assets/images/pexels-photo-2.webp" alt="Photo by ollin focus"></div>
                 <div class="info-cards"><img src="assets/images/pexels-photo-3.webp" alt="Photo by Ahmet Yuksek"></div>
                 <div class="info-cards"><img src="assets/images/pexels-photo-4.webp" alt="Photo by Radis B"></div>
                 <div class="info-cards"><img src="assets/images/pexels-photo-5.webp" alt="Photo by Anna Wilhelm"></div>
-                <div class="info-cards"><img src="assets/images/pexels-photo-6.webp" alt="Photo by Goran Svensson"></div>
+                <div class="info-cards"><img src="assets/images/pexels-photo-6.webp" alt="Photo by Goran Svensson">
+                </div>
                 <div class="info-cards"><img src="assets/images/pexels-photo-7.webp" alt="Photo by Sami Aksu"></div>
             </div>
             <div aria-hidden="true" class="group">
-                <div class="info-cards"><img src="assets/images/pexels-photo-1.webp" alt="Photo by Joshua Woroniecki"></div>
+                <div class="info-cards"><img src="assets/images/pexels-photo-1.webp" alt="Photo by Joshua Woroniecki">
+                </div>
                 <div class="info-cards"><img src="assets/images/pexels-photo-2.webp" alt="Photo by ollin focus"></div>
                 <div class="info-cards"><img src="assets/images/pexels-photo-3.webp" alt="Photo by Ahmet Yuksek"></div>
                 <div class="info-cards"><img src="assets/images/pexels-photo-4.webp" alt="Photo by Radis B"></div>
                 <div class="info-cards"><img src="assets/images/pexels-photo-5.webp" alt="Photo by Anna Wilhelm"></div>
-                <div class="info-cards"><img src="assets/images/pexels-photo-6.webp" alt="Photo by Goran Svensson"></div>
+                <div class="info-cards"><img src="assets/images/pexels-photo-6.webp" alt="Photo by Goran Svensson">
+                </div>
                 <div class="info-cards"><img src="assets/images/pexels-photo-7.webp" alt="Photo by Sami Aksu"></div>
             </div>
         </div>
@@ -175,11 +179,14 @@
         <div class="container">
             <div class="row">
                 <div class="col-12 text-center">
-                    <p>&copy; 2025 Tom Ogundimu. All rights reserved.</p>
+                    <p>&copy; <span id="currentYear"></span> CODERLAWA. All rights reserved.</p>
                 </div>
             </div>
         </div>
     </footer>
+
+    <!-- Back to Top Button -->
+    <button id="backToTop" aria-label="backToTopButton"><i class="fa-solid fa-circle-up fa-bounce"></i></button>
 
     <!-- CONTACT US MODAL -->
     <div class="modal fade" id="messageModal" tabindex="-1" aria-labelledby="messageModalLabel" aria-hidden="true">
@@ -201,6 +208,11 @@
 
     <!-- SCRIPTS -->
     <script src="assets/scripts/main.js"></script>
+
+    <!-- Set current year -->
+    <script>
+        document.getElementById('currentYear').textContent = new Date().getFullYear();
+    </script>
 
     <!-- BOOTSTRAP JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
@@ -230,6 +242,28 @@
                     }
                 });
             });
+    </script>
+
+    <!-- JavaScript code for Back to Top Button -->
+    <script>
+        const backToTopButton = document.getElementById("backToTop");
+
+        // Show button when scrolling down
+        window.addEventListener("scroll", () => {
+            if (window.scrollY > 100) {
+                backToTopButton.style.display = "block";
+            } else {
+                backToTopButton.style.display = "none";
+            }
+        });
+
+        // Scroll smoothly to the top when clicked
+        backToTopButton.addEventListener("click", () => {
+            window.scrollTo({
+                top: 0,
+                behavior: "smooth"
+            });
+        });
     </script>
 
 </body>

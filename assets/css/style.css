@@ -225,6 +225,22 @@ input[type="email"]:focus,
     to {translate: -100%;} */
 }
 
+/* back to top button */
+#backToTop {
+    position: fixed;
+    bottom: 90px;
+    right: 75px;
+    display: none;
+    color: var(--other-accent);
+    background-color: transparent;
+    border: none;
+    padding: 0px 0px;
+    border-radius: 50px;
+    cursor: pointer;
+    font-size: 70px;
+    transition: opacity 0.3s ease-in-out;
+}
+
 /* FOOTER */
 footer {
     background-color: var(--secondary-color);
