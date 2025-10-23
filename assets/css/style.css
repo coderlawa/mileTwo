@@ -235,9 +235,9 @@ input[type="email"]:focus,
     background-color: transparent;
     border: none;
     padding: 0px 0px;
-    border-radius: 50px;
+    border-radius: 25px;
     cursor: pointer;
-    font-size: 70px;
+    font-size: 60px;
     transition: opacity 0.3s ease-in-out;
 }
 
@@ -251,4 +251,21 @@ footer {
 
 .social-icon {
     font-size: 2rem;
+}
+
+/* MEDIA QUERY */
+
+/* SMALL DEVICES (<768px) : mobile phones */
+@media screen and (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+    }
+
+    .carousel {
+        flex-direction: column;
+    }
+
+    .info-cards {
+        flex-direction: column;
+    }
 }

@@ -76,7 +76,7 @@ MOVEMENTIN is a web service for finding airline tickets and holiday bundles base
 
 * 
 
-#### First Time Visitor Goals
+#### Site Visitor Goals
 
 * 
 
@@ -124,6 +124,28 @@ Wireframes were created for Mobile & Tablet/Desktop.
 ![Information Page - tablet / desktop](assets/images/Infomation(big).webp)
 
 ### Features
+
+This website is made up of one main page and an information page. Both pages are divided into 3 sections in the following ways;
+
+* INDEX PAGE: Flight Booking Form, Interactive Map & Deals sections.
+    * Booking Section I.D. -
+    This section contains the booking form needed by site visitors to find flights. The form allows users input their flight type (i.e. one-way / round trip), departure point, departure date, return date (if applicable), destination point, flight grade (i.e. economy, premium or first class) and number of passengers.
+
+    This section covers [Site Visitors Goal](#site-visitor-goals).
+
+    ![Booking Section](assets/images/booking-form.webp)
+
+    * Map Section I.D. -
+    This is the section of the site where users can visualize their locations. The map has been created using the same foundation as [Google Maps](https://google.com/maps) and is highly interactive with the booking form (above) while maintaining its native features. 
+
+    ![Map Section](assets/images/interactive-map.webp)
+
+    * Deals I.D. -
+    In this section, 
+
+    ![Deals](assets/images/deals.webp)
+
+* INFO PAGE: About Us, Infinite Scrolling Images & Contact Us Form.
 
 
 
