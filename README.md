@@ -141,11 +141,12 @@ This website is made up of one main page and an information page. Both pages are
     ![Map Section](assets/images/interactive-map.webp)
 
     * Deals I.D. -
-    In this section, 
+    In this section, site visitors can find holiday packages for varying locations (including their desired location). These deals are not customizable to suit individual requirements.
 
     ![Deals](assets/images/deals.webp)
 
 * INFO PAGE: About Us, Infinite Scrolling Images & Contact Us Form.
+    * About I.D. - 
 
 
 

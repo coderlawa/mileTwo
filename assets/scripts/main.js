@@ -347,7 +347,6 @@ console.log("✈️ One-way trip selected");
 
     // Add event listeners
     oneWayRadio.addEventListener('change', toggleReturnDate);
-console.log("🔄 Round-trip selected");
     roundTripRadio.addEventListener('change', toggleReturnDate);
 
   // CONTACT FORM: Reset when send button is clicked

@@ -261,10 +261,6 @@ footer {
         flex-direction: column;
     }
 
-    .carousel {
-        flex-direction: column;
-    }
-
     .info-cards {
         flex-direction: column;
     }
