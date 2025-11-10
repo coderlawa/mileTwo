@@ -6,8 +6,7 @@ var map;
 var marker;
 
 // ====================
-// 1. MAP INITIALIZATION
-// ====================
+// 1. MAP INITIALIZATION FUNCTION
 
 /*
 This function creates and shows the Google Map on the webpage
@@ -39,7 +38,6 @@ function initMap() {
 
 // ====================
 // 2. FLIGHT FORM RESET FUNCTION
-// ====================
 
 /*
 When user clicks "Reset", this function brings the map back to start
@@ -67,7 +65,6 @@ function handleFormReset() {
 
 // ====================
 // 3. AUTOCOMPLETE DEPARTURE & DESTINATION FUNCTIONS
-// ====================
 
 /*
 Google Places Autocomplete helps users type cities faster
@@ -116,8 +113,7 @@ function setupDestinationAutocomplete() {
 }
 
 // ====================
-// 4. MANUAL INPUT HANDLING
-// ====================
+// 4. MANUAL INPUT HANDLING FUNCTION
 
 /*
 If user types a city name manually (not using autocomplete),
@@ -150,8 +146,7 @@ function handleManualDestinationInput() {
 }
 
 // ====================
-// 5. MAP CLICK HANDLER
-// ====================
+// 5. MAP CLICK HANDLER FUNCTION
 
 /*
 When user clicks anywhere on the map, this function figures out
@@ -192,8 +187,7 @@ function handleMapClick(event) {
 }
 
 // ====================
-// 6. CITY EXTRACTION HELPER
-// ====================
+// 6. CITY EXTRACTION HELPER FUNCTION
 
 /*
 This is like a detective that looks through address information
@@ -230,7 +224,6 @@ function extractCityFromAddress(addressComponents) {
 
 // ====================
 // 7. MAP UPDATE FUNCTION
-// ====================
 
 /*
 This is the most reused function - it updates the map whenever
@@ -262,7 +255,6 @@ function updateMapForLocation(location, title) {
 
 // ====================
 // 8. SETUP FUNCTIONS
-// ====================
 
 /*
 These functions connect our code to the actual HTML page
@@ -312,8 +304,7 @@ function setupMapClickHandler() {
 }
 
 // ====================
-// 9. FLIGHT TYPE TOGGLE
-// ====================
+// 9. FLIGHT TYPE TOGGLE FUNCTION
 
 /*
 This handles showing/hiding the return date field based on
