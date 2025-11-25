@@ -147,8 +147,108 @@ This website is made up of one main page and an information page. Both pages are
 
 * INFO PAGE: About Us, Infinite Scrolling Images & Contact Us Form.
     * About I.D. - 
+    This section provides visitors with a brief overview of what MOVEMENTIN is about and touches on the business' mission.
 
+    ![About Us Section](assets/images/about-us.webp)
 
+    * Infinite Scrolling Images -
+    This section of the info page contains scenic images that should fill site visitors heads with locations for their next holiday destination. The collection of images have made to look like they never end, thus creating the illusion of an infinite scroll. 
+
+    ![Infinity Scroll Section](assets/images/infinite-scroll.webp)
+
+    * Contact I.D. -
+    This is a form designed to give site visitors the ability to send a message to the dev. The form contains fields for full name, phone number, email, message & a submit button. A bounce animation has been added to the paper-plane icon attached to this label to draw the attention of visitors.
+
+    ![Contact Us Section](assets/images/contact-form.webp)
+
+* Footer (on all pages)
+    * Footer ID - 
+    Contains icons connected to the following professional social platforms; Facebook, Instagram, Pinterest & X. It also contains footer text for copyright.
+
+* Back-To-Top button (located at the BOTTOM RIGHT) for helping site visitors get back to the top of the page without needing to scroll back up. The bounce animation has been added to the icon attached to this heading to draw the attention of visitors. This feature is only appears after visitors begin scrolling down the page.
+
+This feature has been replicated from my [Milestone One](https://coderlawa.github.io/milestoneOne/)
+
+* JavaScrpts -
+    * Bootstrap script for bootstrap codes implemented into entire code body.
+    * Font Awesome script for font awesome icons used in project.
+    * Auto-close site menu after site user has selected an option from the navigation.
+    * Back-to-top script for back-to-top button.
+
+### Accessibility
+
+I have adopted the best practices available for making websites usable to individuals who depend on screen-readers by making this project as accessible as possible by;
+
+* Used semantic HTML.
+* Used descriptive "alt" attributes on images.
+* Ensured sufficient color contrast throughout the site.
+* Added animated icons to attract the attention of users.
+
+- - -
+
+## Technology Used
+
+### Languages Used
+
+HTML, CSS & Javascript have been used to create this website and its features.
+
+### Frameworks, Libraries & Programs Used
+
+[Am I Responsive?](https://ui.dev/amiresponsive) - for viewing website across different screen sizes at the same time.
+
+[Bootstrap (v5.3)](https://getbootstrap.com/) - codes for the navbar, tabs, cards and general site designing. More designing was done in the style.css file.
+
+[Birme](https://www.birme.net/) - for converting images to .webp format.
+
+[Balsamiq](https://balsamiq.com/) - used to create wireframes.
+
+[Favicon](https://favicon.io/) - used for this site's favicon.
+
+[Font Awesome](https://fontawesome.com/i) - used for all icons & their animations on the site.
+
+Git - for version control.
+
+[GitHub](https://github.com/) - for saving & storage of files for the website.
+
+Google Dev Tools - used to troubleshoot & test features (including responsiveness & styles).
+
+[Google Fonts](https://fonts.google.com/) - used for all literature on this website.
+
+[Shields](https://shields.io/badges) - for making badges added to this README.md file.
+
+- - -
+
+## Deployment & Local Development
+
+### Deployment
+
+GitHub pages was used to deploy the live website. Steps followed are listed below:
+
+1. Log in / Sign up for [GitHub](https://github.com/)
+2. Selected the repository - milestoneOne.
+3. Clicked the Settings tab (from the top row).
+4. Clicked the Pages option (on the left panel).
+5. In the "Build and deployment" sub-heading, ONLY change the drop-down options under "Branch". Select "main" in the first drop-down & "root" in the second drop-down.
+6. Click "Save" & the live GitHub site should provide a link to your project.
+
+## Local Development
+
+### How to Clone
+
+To clone this site, do the following;
+
+1. Log in / Sign up for [GitHub](https://github.com/)
+2. Select the repository - milestoneOne.
+3. Click on the arrow beside the code button. Depending on your preference, select the correct tab option from either HTTPS, SSH or GitHub CLI and copy the link shown.
+4. Open your IDE and follow the instructions provided to clone a project.
+
+- - -
+
+## Testing
+
+The following bugs were raised by my mentor during a milestone catch-up;
+
+* 
 
 I used mt-1 to space the top of "Book Your Flight Here" & m-3
 

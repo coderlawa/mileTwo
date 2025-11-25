@@ -111,7 +111,7 @@
                         assistance, feel free to reach out to us using the form below or through our contact details.</p>
                 </div>
                 <div class="col-12 col-md-6">
-                    <form action="" method="POST">
+                    <form id="contact-form" action="" method="POST">
                         <div class="mb-3">
                             <label for="name" class="form-label">Name</label>
                             <input type="text" class="form-control" id="name" name="name" placeholder="Your Name"
@@ -127,7 +127,7 @@
                             <textarea class="form-control" id="message" name="message" rows="5"
                                 placeholder="Type your message here" required></textarea>
                         </div>
-                        <button type="button" class="btn btn-primary w-100" data-bs-toggle="modal"
+                        <button type="submit" class="btn btn-primary w-100" data-bs-toggle="modal"
                             data-bs-target="#messageModal"><i class="fa-solid fa-paper-plane fa-beat-fade"
                                 style="--fa-animation-duration: 2s; --fa-beat-fade-opacity: 0.1; --fa-beat-fade-scale: 1.2;"></i>
                             Send Message</button>
@@ -135,7 +135,7 @@
                 </div>
                 <div class="col-12 col-md-6 mt-4 mt-md-0 align-self-center">
                     <h5>Our Office</h5>
-                    <p>123 Milky Way<br>Wanderlust City, OK 45678<br>Email:yes@no.com<br>Phone: (123)
+                    <p>123 Milky Way<br>Wanderlust City, OK 45678<br>Email: yes@no.com<br>Phone: (123)
                         456-7890</p>
                     <div>
                         <p>
@@ -193,7 +193,7 @@
     <button id="backToTop" aria-label="backToTopButton"><i class="fa-solid fa-circle-up fa-bounce"></i></button>
 
     <!-- CONTACT US MODAL -->
-    <div class="modal fade" id="messageModal" tabindex="-1" aria-labelledby="messageModalLabel" aria-hidden="true">
+    <div class="modal fade" id="messageModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="messageModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered">
             <div class="modal-content">
                 <div class="modal-header">
