@@ -229,7 +229,7 @@ input[type="email"]:focus,
 #backToTop {
     position: fixed;
     bottom: 90px;
-    right: 75px;
+    right: 52px;
     display: none;
     color: var(--other-accent);
     background-color: transparent;
@@ -259,6 +259,7 @@ footer {
 @media screen and (max-width: 768px) {
     .navbar {
         flex-direction: column;
+        padding-top: 1.3rem;
     }
 
     .info-cards {
