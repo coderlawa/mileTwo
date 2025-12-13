@@ -255,7 +255,14 @@ footer {
 
 /* MEDIA QUERY */
 
-/* SMALL DEVICES (<768px) : mobile phones */
+/* SMALL DEVICES (<576x) : mobile phones */
+@media screen and (max-width: 576px) {
+    #returnDateGroup {
+        min-height: 2.5vh;
+    }
+}
+
+/* MEDIUM DEVICES (>768px) : tablet phones */
 @media screen and (max-width: 768px) {
     .navbar {
         flex-direction: column;
