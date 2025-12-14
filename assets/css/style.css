@@ -77,7 +77,7 @@ label {
 /* FORM BUTTONS */
 #clearFormGroup,
 #submitFormGroup {
-    margin-top: 3rem;
+    margin-top: 2.5rem;
 }
 
 /* DESIGN TOOLS */
@@ -267,8 +267,8 @@ footer {
         font-size: 11px;
     }
 
-    #returnDateGroup {
-        min-height: ;
+    #return-date {
+        margin-top: 22px;
     }
 
     #submitFormGroup {
