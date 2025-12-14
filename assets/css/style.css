@@ -234,7 +234,7 @@ input[type="email"]:focus,
 /* back to top button */
 #backToTop {
     position: fixed;
-    bottom: 90px;
+    bottom: 99px;
     right: 52px;
     display: none;
     color: var(--other-accent);
@@ -268,7 +268,7 @@ footer {
     }
 
     #return-date {
-        margin-top: 22px;
+        margin-top: 23px;
     }
 
     #submitFormGroup {
