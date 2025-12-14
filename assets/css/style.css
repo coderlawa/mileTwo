@@ -74,6 +74,12 @@ label {
     transition: 0.3s;
 }
 
+/* FORM BUTTONS */
+#clearFormGroup,
+#submitFormGroup {
+    margin-top: 3rem;
+}
+
 /* DESIGN TOOLS */
 .hide {
     visibility: hidden;
@@ -257,9 +263,17 @@ footer {
 
 /* SMALL DEVICES (<576x) : mobile phones */
 @media screen and (max-width: 576px) {
-    #returnDateGroup {
-        min-height: 2.5vh;
+    input[type="date"] {
+        font-size: 11px;
     }
+
+    #returnDateGroup {
+        min-height: ;
+    }
+
+    #submitFormGroup {
+    margin-top: 22px;
+}
 }
 
 /* MEDIUM DEVICES (>768px) : tablet phones */
