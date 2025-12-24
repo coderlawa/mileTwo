@@ -163,6 +163,15 @@ input[type="email"]:focus,
     box-shadow: 0 0 5px var(--accent-color);
 }
 
+/* FORM VALIDATION */
+.invalid {
+    border-color: var(--other-accent) !important;
+}
+
+.invalid:focus {
+    box-shadow: 0 0 5px var(--other-accent) !important;
+}
+
 /* MAP */
 
 #map {
