@@ -175,6 +175,7 @@ input[type="email"]:focus,
 /* MAP */
 
 #map {
+    align-self: center;
     justify-self: center;
     width: 88%;
     height: 50vh;
@@ -243,9 +244,6 @@ input[type="email"]:focus,
 @keyframes scroller {
     from {transform: translateX(0);}
     to {transform: translateX(-100%);}
-
-    /* from {translate: 0;}
-    to {translate: -100%;} */
 }
 
 /* back to top button */
