@@ -175,7 +175,6 @@ input[type="email"]:focus,
 /* MAP */
 
 #map {
-    align-self: center;
     justify-self: center;
     width: 88%;
     height: 50vh;
