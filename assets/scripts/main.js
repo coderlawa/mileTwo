@@ -347,6 +347,20 @@ document.addEventListener("DOMContentLoaded", function () {
   roundTripRadio.addEventListener("change", toggleReturnDate);
   console.log("✅ Flight type toggle is ready!");
 
+  // DISBLE PAST DATES FOR DEPARTURE & RETURN DATE INPUTS
+  const departureDateInput = document.getElementById("departure-date");
+  const today = new Date().toISOString().split("T")[0]; // Get today's date in YYYY-MM-DD format
+  departureDateInput.min = today;
+  returnDateInput.min = today;
+
+  // Update return date min when departure date changes
+  departureDateInput.addEventListener("change", function () {
+    if (departureDateInput.value) {
+      returnDateInput.min = departureDateInput.value;
+    }
+  });
+  console.log("✅ Date inputs are set up!");
+
   // CONTACT FORM: Reset when send button is clicked
   const contactForm = document.querySelector("#contact form");
   const sendBtn = contactForm ? contactForm.querySelector('[data-bs-target="#messageModal"]') : null;
