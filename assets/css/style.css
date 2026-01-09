@@ -174,8 +174,12 @@ input[type="email"]:focus,
 
 /* MAP */
 
+#travel-map {
+    width: 100%;
+    padding: 2rem 0;
+}
+
 #map {
-    justify-self: center;
     width: 88%;
     height: 50vh;
     border: 2px solid var(--primary-color);
