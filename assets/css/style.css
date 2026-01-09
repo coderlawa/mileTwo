@@ -149,9 +149,8 @@ input[type="email"],
 textarea::placeholder,
 #message {
     font-family: var(--secondary-font);
-    color: var(--primary-color);
+    font-size: 0.9rem;
     font-weight: bold;
-    font-size: 15px;
 }
 
 input[type="text"]:focus,
@@ -281,10 +280,9 @@ footer {
 
 /* SMALL DEVICES (> 576x) : mobile phones */
 @media screen and (max-width: 576px) {
-    input::placeholder,
-    input[type="date"],
-    input[type="text"] {
-        font-size: 2.0vw;
+    #flightTypeGroup .btn,
+    #flightGradeGroup .btn {
+        font-size: small;
     }
 }
 
@@ -304,8 +302,11 @@ footer {
         right: 50px;
     }
 
-    #clearFormGroup,
+    #clearFormGroup {
+    margin-top: 2.8vh;
+    }
+
     #submitFormGroup {
-    margin-top: 2.5vh;
+    margin-top: 1.8vh;
     }
 }
