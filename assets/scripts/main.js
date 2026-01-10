@@ -86,7 +86,7 @@ function setupDepartureAutocomplete() {
 
 // Set up autocomplete for DESTINATION city
 function setupDestinationAutocomplete() {
-  console.log("🔄 Setting up destination autocomplete...");
+  console.log("🔄 Setting up destination autocomplete features...");
 
   const destinationInput = document.getElementById("destination");
 
@@ -96,7 +96,7 @@ function setupDestinationAutocomplete() {
       destinationInput
     );
 
-    // When user selects a place from suggestions...
+    // When user selects a place from dropdown suggestions
     destinationAutocomplete.addListener("place_changed", function () {
       console.log("📍 User selected a place from autocomplete");
 
@@ -110,7 +110,10 @@ function setupDestinationAutocomplete() {
       }
     });
 
-    console.log("✅ Destination autocomplete ready!");
+    // Also handle manual typing
+    destinationInput.addEventListener("change", handleManualDestinationInput);
+
+    console.log("✅ Destination autocomplete features are ready!");
   }
 }
 
@@ -274,32 +277,6 @@ function setupFormReset() {
   }
 }
 
-// Connect the manual input handler
-function setupDestinationAutocomplete() {
-  console.log("🔄 Setting up destination features...");
-
-  const destinationInput = document.getElementById("destination");
-  if (destinationInput) {
-    // Set up autocomplete first
-    const destinationAutocomplete = new google.maps.places.Autocomplete(
-      destinationInput
-    );
-
-    // When place is selected from dropdown
-    destinationAutocomplete.addListener("place_changed", function () {
-      const place = destinationAutocomplete.getPlace();
-      if (place.geometry && place.geometry.location) {
-        updateMapForLocation(place.geometry.location, place.name);
-      }
-    });
-
-    // Also handle manual typing
-    destinationInput.addEventListener("change", handleManualDestinationInput);
-
-    console.log("✅ Destination features ready!");
-  }
-}
-
 // Make the map clickable
 function setupMapClickHandler() {
   console.log("🔄 Making map clickable...");
@@ -316,7 +293,7 @@ whether user selects one-way or round-trip
 */
 
 // This runs when the webpage finishes loading
-document.addEventListener("DOMContentLoaded", function () {
+document.addEventListener("DOMContentLoaded", () => {
   console.log("📄 Webpage loaded, setting up flight type toggle...");
 
   const oneWayRadio = document.getElementById("one-way");
@@ -361,16 +338,62 @@ document.addEventListener("DOMContentLoaded", function () {
   });
   console.log("✅ Date inputs are set up!");
 
-  // CONTACT FORM: Reset when send button is clicked
-  const contactForm = document.querySelector("#contact form");
-  const sendBtn = contactForm ? contactForm.querySelector('[data-bs-target="#messageModal"]') : null;
+  // DISABLE SUBMIT BUTTON UNTIL REQUIRED FIELDS IN CONTACT FORM ARE FILLED IN
+  const contactForm = document.getElementById("contact-form");
+  const nameInput = document.querySelector("#contact-form #name");
+  const emailInput = document.querySelector("#contact-form #email");
+  const messageInput = document.querySelector("#contact-form #message");
+  const sendBtn = contactForm
+    ? contactForm.querySelector('button[type="submit"]')
+    : null;
 
-  if (contactForm && sendBtn) {
-    sendBtn.addEventListener("click", function () {
-      console.log("📧 Resetting contact form");
-      contactForm.reset();
-    });
+    function toggleSendButton() {
+    const isValid =
+      !!nameInput.value.trim() &&
+      !!emailInput.value.trim() &&
+      !!messageInput.value.trim();
+
+    sendBtn.disabled = !isValid;
   }
+
+  if (contactForm && sendBtn && nameInput && emailInput && messageInput) {
+    // Initial check
+    toggleSendButton();
+
+    // Add event listeners to inputs
+    nameInput.addEventListener("input", toggleSendButton);
+    emailInput.addEventListener("input", toggleSendButton);
+    messageInput.addEventListener("input", toggleSendButton);
+
+    // Handle form submission
+    contactForm.addEventListener("submit", (e) => {
+      e.preventDefault();
+      console.log("📧 Contact form submitted!");
+
+      // Simulate async submission delay
+      setTimeout(() => {
+        sendBtn.disabled = true; // Disable send button again
+        contactForm.reset();
+        toggleSendButton();
+      }, 100);
+    });
+
+    console.log("✅ Contact form validation is set up!");
+  } else {
+    console.log("⚠️ Contact form elements not found!");
+  }
+
+
+  // CONTACT FORM: Reset when send button is clicked
+  // const contactForm = document.querySelector("#contact form");
+  // const sendBtn = contactForm ? contactForm.querySelector('[data-bs-target="#messageModal"]') : null;
+
+  // if (contactForm && sendBtn) {
+  //   sendBtn.addEventListener("click", function () {
+  //     console.log("📧 Resetting contact form");
+  //     contactForm.reset();
+  //   });
+  // }
 
   console.log("✅ All interactive features are ready!");
 });
