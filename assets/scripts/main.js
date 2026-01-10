@@ -319,7 +319,7 @@ document.addEventListener("DOMContentLoaded", () => {
   // Initial setup
   toggleReturnDate();
 
-  // Add event listeners
+  // FLIGHT TYPE TOGGLE EVENT LISTENERS
   oneWayRadio.addEventListener("change", toggleReturnDate);
   roundTripRadio.addEventListener("change", toggleReturnDate);
   console.log("✅ Flight type toggle is ready!");
@@ -354,6 +354,9 @@ document.addEventListener("DOMContentLoaded", () => {
       !!messageInput.value.trim();
 
     sendBtn.disabled = !isValid;
+
+    console.log(`🔄 Send button is now ${isValid ? "enabled" : "disabled"}`
+    );
   }
 
   if (contactForm && sendBtn && nameInput && emailInput && messageInput) {
@@ -382,18 +385,6 @@ document.addEventListener("DOMContentLoaded", () => {
   } else {
     console.log("⚠️ Contact form elements not found!");
   }
-
-
-  // CONTACT FORM: Reset when send button is clicked
-  // const contactForm = document.querySelector("#contact form");
-  // const sendBtn = contactForm ? contactForm.querySelector('[data-bs-target="#messageModal"]') : null;
-
-  // if (contactForm && sendBtn) {
-  //   sendBtn.addEventListener("click", function () {
-  //     console.log("📧 Resetting contact form");
-  //     contactForm.reset();
-  //   });
-  // }
 
   console.log("✅ All interactive features are ready!");
 });
