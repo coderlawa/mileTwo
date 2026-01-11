@@ -300,90 +300,112 @@ document.addEventListener("DOMContentLoaded", () => {
   const roundTripRadio = document.getElementById("round-trip");
   const returnDateGroup = document.getElementById("returnDateGroup");
   const returnDateInput = document.getElementById("return-date");
-
-  // Function to show/hide return date
-
-  function toggleReturnDate() {
-    if (oneWayRadio.checked) {
-      console.log("✈️ One-way trip selected");
-
-      returnDateGroup.classList.add("hide");
-      returnDateInput.removeAttribute("required");
-      returnDateInput.value = ""; // Clear the value
-    } else {
-      returnDateGroup.classList.remove("hide");
-      returnDateInput.setAttribute("required", "required");
-    }
-  }
-
-  // Initial setup
-  toggleReturnDate();
-
-  // FLIGHT TYPE TOGGLE EVENT LISTENERS
-  oneWayRadio.addEventListener("change", toggleReturnDate);
-  roundTripRadio.addEventListener("change", toggleReturnDate);
-  console.log("✅ Flight type toggle is ready!");
-
-  // DISBLE PAST DATES FOR DEPARTURE & RETURN DATE INPUTS
   const departureDateInput = document.getElementById("departure-date");
-  const today = new Date().toISOString().split("T")[0]; // Get today's date in YYYY-MM-DD format
-  departureDateInput.min = today;
-  returnDateInput.min = today;
 
-  // Update return date min when departure date changes
-  departureDateInput.addEventListener("change", function () {
-    if (departureDateInput.value) {
-      returnDateInput.min = departureDateInput.value;
+  // Only proceed if all flight/date elements exist on the page
+  if (oneWayRadio && roundTripRadio && returnDateGroup && returnDateInput && departureDateInput) {
+    // Function to show/hide return date
+    function toggleReturnDate() {
+      if (oneWayRadio.checked) {
+        console.log("✈️ One-way trip selected");
+
+        returnDateGroup.classList.add("hide");
+        returnDateInput.removeAttribute("required");
+        returnDateInput.value = ""; // Clear the value
+      } else {
+        returnDateGroup.classList.remove("hide");
+        returnDateInput.setAttribute("required", "required");
+      }
     }
-  });
-  console.log("✅ Date inputs are set up!");
+
+    // Initial setup
+    toggleReturnDate();
+
+    // FLIGHT TYPE TOGGLE EVENT LISTENERS
+    oneWayRadio.addEventListener("change", toggleReturnDate);
+    roundTripRadio.addEventListener("change", toggleReturnDate);
+    console.log("✅ Flight type toggle is ready!");
+
+    // DISABLE PAST DATES FOR DEPARTURE & RETURN DATE INPUTS
+    const today = new Date().toISOString().split("T")[0]; // Get today's date in YYYY-MM-DD format
+    departureDateInput.min = today;
+    returnDateInput.min = today;
+
+    // Update return date min when departure date changes
+    departureDateInput.addEventListener("change", function () {
+      if (departureDateInput.value) {
+        returnDateInput.min = departureDateInput.value;
+      }
+    });
+    console.log("✅ Date inputs are set up!");
+  } else {
+    console.log("⚠️ Flight/date inputs not found — skipping flight toggle and date setup.");
+  }
 
   // DISABLE SUBMIT BUTTON UNTIL REQUIRED FIELDS IN CONTACT FORM ARE FILLED IN
   const contactForm = document.getElementById("contact-form");
-  const nameInput = document.querySelector("#contact-form #name");
-  const emailInput = document.querySelector("#contact-form #email");
-  const messageInput = document.querySelector("#contact-form #message");
-  const sendBtn = contactForm
-    ? contactForm.querySelector('button[type="submit"]')
-    : null;
+
+  if (contactForm) {
+    const nameInput = contactForm.querySelector("#name");
+    const emailInput = contactForm.querySelector("#email");
+    const messageInput = contactForm.querySelector("#message");
+    const sendBtn = contactForm.querySelector('button[type="submit"]');
 
     function toggleSendButton() {
-    const isValid =
-      !!nameInput.value.trim() &&
-      !!emailInput.value.trim() &&
-      !!messageInput.value.trim();
+      if (!nameInput || !emailInput || !messageInput) return;
 
-    sendBtn.disabled = !isValid;
+      const isValid =
+        !!nameInput.value.trim() &&
+        !!emailInput.value.trim() &&
+        !!messageInput.value.trim();
 
-    console.log(`🔄 Send button is now ${isValid ? "enabled" : "disabled"}`
-    );
-  }
+      // Don't change the button state here — rely on native browser validation instead
+      console.log(`🔍 Contact form valid: ${isValid ? "yes" : "no"}`);
+    }
 
-  if (contactForm && sendBtn && nameInput && emailInput && messageInput) {
     // Initial check
     toggleSendButton();
 
     // Add event listeners to inputs
-    nameInput.addEventListener("input", toggleSendButton);
-    emailInput.addEventListener("input", toggleSendButton);
-    messageInput.addEventListener("input", toggleSendButton);
+    [nameInput, emailInput, messageInput].forEach(el =>
+      el.addEventListener("input", toggleSendButton)
+    );
 
     // Handle form submission
     contactForm.addEventListener("submit", (e) => {
       e.preventDefault();
       console.log("📧 Contact form submitted!");
 
+      // Let the browser perform validation UI; if invalid, show it and stop
+      if (!contactForm.checkValidity()) {
+        contactForm.reportValidity();
+        return;
+      }
+
       // Simulate async submission delay
       setTimeout(() => {
-        sendBtn.disabled = true; // Disable send button again
-        contactForm.reset();
-        toggleSendButton();
+        try {
+          // Reset the form and update the button state (for logging)
+          contactForm.reset();
+          toggleSendButton();
+
+          // Show modal programmatically AFTER successful submission
+          const modalEl = document.getElementById('messageModal');
+          if (modalEl && typeof bootstrap !== 'undefined') {
+            const messageModal = new bootstrap.Modal(modalEl);
+            messageModal.show();
+          }
+
+          console.log('✅ Contact form submission handled successfully.');
+        } catch (err) {
+          console.error('❌ Error handling contact submission:', err);
+        }
       }, 100);
     });
 
     console.log("✅ Contact form validation is set up!");
   } else {
-    console.log("⚠️ Contact form elements not found!");
+    console.log("⚠️ Contact form not found on this page.");
   }
 
   console.log("✅ All interactive features are ready!");
@@ -399,7 +421,13 @@ start our application by initializing the map
 */
 window.onload = function () {
   console.log("🚀 Starting Travel Planner Application...");
-  initMap();
+
+  // Initialize map only if Google Maps is available and a map element exists
+  if (typeof google !== 'undefined' && document.getElementById('map')) {
+    initMap();
+  } else {
+    console.log("⚠️ Google Maps not loaded or #map element not present — skipping map initialization.");
+  }
 };
 
 // =============================================
