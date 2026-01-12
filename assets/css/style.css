@@ -251,8 +251,8 @@ input[type="email"]:focus,
 /* back to top button */
 #backToTop {
     position: fixed;
-    bottom: 85px;
-    right: 95px;
+    bottom: 82px;
+    right: 68px;
     display: none;
     color: var(--other-accent);
     background-color: transparent;
@@ -286,8 +286,8 @@ footer {
     }
 }
 
-/* MEDIUM DEVICES (> 768px) : tablet phones */
-@media screen and (max-width: 768px) {
+/* MEDIUM DEVICES (< 768px) : tablet phones */
+@media screen and (max-width: 767px) {
     .navbar {
         flex-direction: column;
         padding-top: 1.3rem;
@@ -298,8 +298,8 @@ footer {
     }
 
     #backToTop {
-        bottom: 40px;
-        right: 50px;
+        bottom: 45px;
+        right: 42px;
     }
 
     #clearFormGroup {

@@ -15,7 +15,7 @@ if (flightForm) {
     const departureDateEl = document.getElementById("departure-date");
     const returnDateEl = document.getElementById("return-date");
     const passengersEl = document.getElementById("passengers");
-
+    
     const departure = departureEl ? departureEl.value : "";
     const destination = destinationEl ? destinationEl.value : "";
     const departureDate = departureDateEl ? departureDateEl.value : "";

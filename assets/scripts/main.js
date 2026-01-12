@@ -349,7 +349,6 @@ document.addEventListener("DOMContentLoaded", () => {
     const nameInput = contactForm.querySelector("#name");
     const emailInput = contactForm.querySelector("#email");
     const messageInput = contactForm.querySelector("#message");
-    const sendBtn = contactForm.querySelector('button[type="submit"]');
 
     function toggleSendButton() {
       if (!nameInput || !emailInput || !messageInput) return;
@@ -359,7 +358,7 @@ document.addEventListener("DOMContentLoaded", () => {
         !!emailInput.value.trim() &&
         !!messageInput.value.trim();
 
-      // Don't change the button state here — rely on native browser validation instead
+      // FORM USES BROWSER'S BUILT-IN VALIDATION
       console.log(`🔍 Contact form valid: ${isValid ? "yes" : "no"}`);
     }
 
