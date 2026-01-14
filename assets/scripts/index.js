@@ -76,7 +76,7 @@ if (flightForm) {
 
     // Send data to the server
     // NOTE: using POST here since we're sending a JSON body. Change server endpoint if needed.
-    fetch("/api/flights", {
+    fetch("https://serpapi.com/search?engine=google_flights", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
