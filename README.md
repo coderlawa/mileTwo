@@ -227,7 +227,7 @@ Google Dev Tools - used to troubleshoot & test features (including responsivenes
 GitHub pages was used to deploy the live website. Steps followed are listed below:
 
 1. Log in / Sign up for [GitHub](https://github.com/)
-2. Selected the repository - milestoneOne.
+2. Selected the repository - mileTwo.
 3. Clicked the Settings tab (from the top row).
 4. Clicked the Pages option (on the left panel).
 5. In the "Build and deployment" sub-heading, ONLY change the drop-down options under "Branch". Select "main" in the first drop-down & "root" in the second drop-down.
@@ -240,7 +240,7 @@ GitHub pages was used to deploy the live website. Steps followed are listed belo
 To clone this site, do the following;
 
 1. Log in / Sign up for [GitHub](https://github.com/)
-2. Select the repository - milestoneOne.
+2. Select the repository - mileTwo.
 3. Click on the arrow beside the code button. Depending on your preference, select the correct tab option from either HTTPS, SSH or GitHub CLI and copy the link shown.
 4. Open your IDE and follow the instructions provided to clone a project.
 
@@ -252,7 +252,7 @@ The following bugs were raised by my mentor during a milestone catch-up;
 
 * 
 
-I used mt-1 to space the top of "Book Your Flight Here" & m-3
+The Contact Form would pop-up whenever the submit button was clicked even though the required form fields were empty.
 
 I had an issue with the radio buttons on the flight checking form. The Flight Type and the Flight Grade classed because they we all shared the same NAME - changing names of elements to fit their group solves this problem.
 

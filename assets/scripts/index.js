@@ -75,9 +75,9 @@ if (flightForm) {
     };
 
     // Send data to the server
-    // NOTE: using POST here since we're sending a JSON body. Change server endpoint if needed.
-    fetch("https://serpapi.com/search?engine=google_flights", {
-      method: "POST",
+    // NOTE: using GET here since we're sending parameters in the URL. Change server endpoint if needed.
+    fetch("/api/flights", {
+      method: "GET",
       headers: {
         "Content-Type": "application/json",
       },
@@ -101,7 +101,7 @@ if (flightForm) {
         if (submitBtn) submitBtn.disabled = false;
       })
       .catch((error) => {
-        console.error("Error:", error);
+        console.error("Error: ", error);
         alert("An error occurred while submitting the flight search.");
         if (submitBtn) submitBtn.disabled = false;
       });
