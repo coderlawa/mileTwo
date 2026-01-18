@@ -218,7 +218,9 @@ Google Dev Tools - used to troubleshoot & test features (including responsivenes
 
 [Shields](https://shields.io/badges) - for making badges added to this README.md file.
 
-[SerpAPI](https://serpapi.com/) - used this to scrape the web for flights
+[SerpAPI](https://serpapi.com/) - attempted to use this to scrape the web for flights but it proved to be tedious.
+
+[Skyscanner](https://developers.skyscanner.net/docs/getting-started/authentication) - the developer was in the process of acquiring an API key and was unable to do so in time, to meet the milestone's deadline.
 
 - - -
 
@@ -250,9 +252,11 @@ To clone this site, do the following;
 
 ## Testing
 
-The following bugs were raised by my mentor during a milestone catch-up;
+The following bugs were discovered while manually testing the sites scripts;
 
 * The Contact Form would pop-up whenever the submit button was clicked even though the required form fields were empty.
+
+* The Return Date Group on the Flight Form remained hidden when the form was reset with the Clear All button.
 
 
 I had an issue with the radio buttons on the flight checking form. The Flight Type and the Flight Grade classed because they we all shared the same NAME - changing names of elements to fit their group solves this problem.
