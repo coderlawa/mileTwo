@@ -2,6 +2,37 @@
 var flightForm = document.querySelector("#flight-form-div form");
 if (flightForm) {
   const submitBtn = document.getElementById('find-flights');
+  const resetBtn = document.getElementById('reset-form');
+
+  // Function to fully reset the form
+  function resetFlightForm() {
+    flightForm.reset();
+    
+    // Reset radio buttons to defaults
+    document.getElementById('round-trip').checked = true;
+    document.getElementById('premium').checked = true;
+    
+    // Ensure all required fields are cleared
+    document.getElementById('departure').value = '';
+    document.getElementById('destination').value = '';
+    document.getElementById('departure-date').value = '';
+    document.getElementById('return-date').value = '';
+    document.getElementById('passengers').value = 'one';
+    
+    // Show return date group (for round-trip default)
+    const returnDateGroup = document.getElementById('returnDateGroup');
+    if (returnDateGroup) {
+      returnDateGroup.classList.remove('hide');
+    }
+  }
+
+  // Add click handler to reset button
+  if (resetBtn) {
+    resetBtn.addEventListener('click', function (event) {
+      event.preventDefault();
+      resetFlightForm();
+    });
+  }
 
   flightForm.addEventListener("submit", function (event) {
     event.preventDefault();
@@ -31,13 +62,13 @@ if (flightForm) {
     const flightGrade = flightGradeEl ? flightGradeEl.id : null;
 
     console.log({
-      flightType,
       departure,
-      destination,
       departureDate,
-      returnDate,
+      destination,
       flightGrade,
-      passengers,
+      flightType,
+      passengers,           
+      returnDate,      
     });
 
     // Basic validation

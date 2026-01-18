@@ -170,6 +170,8 @@ This website is made up of one main page and an information page. Both pages are
 This feature has been replicated from my [Milestone One](https://coderlawa.github.io/milestoneOne/)
 
 * JavaScrpts -
+    * Google Maps API key
+    * Copyright information with automatic calendar update.
     * Bootstrap script for bootstrap codes implemented into entire code body.
     * Font Awesome script for font awesome icons used in project.
     * Auto-close site menu after site user has selected an option from the navigation.
@@ -250,9 +252,8 @@ To clone this site, do the following;
 
 The following bugs were raised by my mentor during a milestone catch-up;
 
-* 
+* The Contact Form would pop-up whenever the submit button was clicked even though the required form fields were empty.
 
-The Contact Form would pop-up whenever the submit button was clicked even though the required form fields were empty.
 
 I had an issue with the radio buttons on the flight checking form. The Flight Type and the Flight Grade classed because they we all shared the same NAME - changing names of elements to fit their group solves this problem.
 

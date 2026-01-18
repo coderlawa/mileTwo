@@ -274,6 +274,7 @@ function setupFormReset() {
   if (flightForm) {
     flightForm.addEventListener("reset", handleFormReset);
     console.log("✅ Reset button is connected!");
+    flightForm.reset(); // Ensure form is reset on load
   }
 }
 
@@ -315,6 +316,7 @@ document.addEventListener("DOMContentLoaded", () => {
       } else {
         returnDateGroup.classList.remove("hide");
         returnDateInput.setAttribute("required", "required");
+        console.log("🔄 Round-trip selected");
       }
     }
 
@@ -325,7 +327,7 @@ document.addEventListener("DOMContentLoaded", () => {
     oneWayRadio.addEventListener("change", toggleReturnDate);
     roundTripRadio.addEventListener("change", toggleReturnDate);
     console.log("✅ Flight type toggle is ready!");
-
+    
     // DISABLE PAST DATES FOR DEPARTURE & RETURN DATE INPUTS
     const today = new Date().toISOString().split("T")[0]; // Get today's date in YYYY-MM-DD format
     departureDateInput.min = today;
