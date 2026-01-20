@@ -102,7 +102,8 @@
                             </div>
                             <div class="col-12 col-md-6">
                                 <label class="form-label d-block mb-2" id="flightGradeLabel">Flight Grade</label>
-                                <div id="flightGradeGroup" class="btn-group w-100" role="group" aria-label="Flight Grade Selection">
+                                <div id="flightGradeGroup" class="btn-group w-100" role="group"
+                                    aria-label="Flight Grade Selection">
                                     <input type="radio" class="btn-check" name="flight-grade" id="economy"
                                         autocomplete="off">
                                     <label class="btn btn-outline-primary" for="economy">Eco</label>
@@ -124,7 +125,7 @@
                                     <option value="two">2</option>
                                     <option value="three">3</option>
                                     <option value="four">4</option>
-                                    <option value="max">5+</option>
+                                    <option value="five and above">5+</option>
                                 </select>
                             </div>
                             <div id="clearFormGroup" class="col-md-3 ms-auto">
@@ -157,63 +158,59 @@
     <!-- DEALS -->
     <section id="deals" class="bottom">
         <div class="container">
-            <!-- CARDS -->
+            <!-- SLIDES -->
             <div class="row text-center mb-4 section">
                 <div class="col-12">
-                    <h2 class="fw-bold">Top Travel Deals</h2>
+                    <h2 class="fw-bold">Top Travel Destinations</h2>
                     <p class="lead">Explore our best offers and find your perfect getaway!</p>
                 </div>
             </div>
-            <div class="row g-4">
-                <!-- Deal Card 1 -->
-                <div class="col-12 col-md-6 col-lg-4">
-                    <div class="card h-100">
-                        <img src="assets/images/eiffel-tower.webp"
-                            class="card-img-top" alt="Eiffel Tower in Paris">
-                        <div class="card-body d-flex flex-column">
-                            <h5 class="card-title">Romantic Paris Getaway</h5>
-                            <p class="card-text">Experience the City of Love with our exclusive 5-day
+            <div id="carouselExampleCaptions" class="carousel slide">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                        aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                        aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                        aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <a href=""><img src="assets/images/eiffel-tower.webp" class="d-block w-100" alt="An image of the Eiffel Tower, Paris during the day"></a>
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Romantic Paris Getaway</h5>
+                            <p>Experience the City of Love with our exclusive 5-day
                                 package including flights and accommodation.</p>
-                            <div class="mt-auto">
-                                <p class="card-text">Price: TBA</P>
-                                <a href="#" class="btn btn-primary w-100">Book Now</a>
-                            </div>
                         </div>
                     </div>
-                </div>
-                <!-- Deal Card 2 -->
-                <div class="col-12 col-md-6 col-lg-4">
-                    <div class="card h-100">
-                        <img src="assets/images/tokyo-city.webp"
-                            class="card-img-top" alt="Tokyo Cityscape">
-                        <div class="card-body d-flex flex-column">
-                            <h5 class="card-title">Tokyo Explorer</h5>
-                            <p class="card-text">Discover the vibrant culture and technology of Tokyo with our
+                    <div class="carousel-item">
+                        <a href=""><img src="assets/images/tokyo-city.webp" class="d-block w-100" alt="An image of Tokyo City, Japan at night"></a>
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Tokyo Explorer</h5>
+                            <p>Discover the vibrant culture and technology of Tokyo with our
                                 7-day tour package.</p>
-                            <div class="mt-auto">
-                                <p class="card-text">Price: TBA</p>
-                                <a href="#" class="btn btn-primary w-100">Book Now</a>
-                            </div>
                         </div>
                     </div>
-                </div>
-                <!-- Deal Card 3 -->
-                <div class="col-12 col-md-6 col-lg-4">
-                    <div class="card h-100">
-                        <img src="assets/images/new-york-city.webp"
-                            class="card-img-top" alt="New York City Skyline">
-                        <div class="card-body d-flex flex-column">
-                            <h5 class="card-title">New York City Lights</h5>
-                            <p class="card-text">Experience the hustle and bustle of NYC with our 4-day city
+                    <div class="carousel-item">
+                        <a href=""><img src="assets/images/new-york-city.webp" class="d-block w-100" alt="An image of New York City, USA at night"></a>
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>New York City Lights</h5>
+                            <p>Experience the hustle and bustle of NYC with our 4-day city
                                 break package.</p>
-                            <div class="mt-auto">
-                                <p class="card-text">Price: TBA</p>
-                                <a href="#" class="btn btn-primary w-100">Book Now</a>
-                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>            
         </div>
     </section>
 
@@ -260,7 +257,8 @@
     <button id="backToTop" aria-label="backToTopButton"><i class="fa-solid fa-circle-up fa-bounce"></i></button>
 
     <!-- FLIGHT SEARCH MODAL -->
-    <div class="modal fade" id="flightsModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="flightsModalLabel" aria-hidden="true">
+    <div class="modal fade" id="flightsModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+        aria-labelledby="flightsModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
             <div class="modal-content">
                 <div class="modal-header">
@@ -273,32 +271,20 @@
                         <br>
                         <br>
                         <br>
-                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corporis, neque sed quos ducimus molestias, delectus amet pariatur rem voluptatibus, velit dolores laudantium architecto impedit in dolore beatae iusto ad natus?
-                        <br>                        
-                        <br>
-                        <br>
-                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptates aut vel totam incidunt natus obcaecati accusamus aliquid officiis reprehenderit asperiores culpa atque, modi debitis dicta quaerat sequi pariatur! Aliquid, tempore?
-                        <br>
-                        <br>
-                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cupiditate iste nobis cum quidem ex laboriosam accusamus enim animi vero quaerat at, dicta adipisci saepe vitae reiciendis. Saepe sed ipsam accusantium?
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corporis, neque sed quos ducimus
+                        molestias, delectus amet pariatur rem voluptatibus, velit dolores laudantium architecto impedit
+                        in dolore beatae iusto ad natus?
                         <br>
                         <br>
                         <br>
-                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iure accusamus iste quas, non eveniet doloremque tempora et praesentium rerum, atque similique! Porro quos recusandae nemo inventore nihil autem ipsam facere?
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptates aut vel totam incidunt
+                        natus obcaecati accusamus aliquid officiis reprehenderit asperiores culpa atque, modi debitis
+                        dicta quaerat sequi pariatur! Aliquid, tempore?
                         <br>
                         <br>
-                        <br>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui libero in ipsam beatae. Expedita eos laborum magni! Impedit, ducimus? Ad sed impedit debitis provident adipisci neque molestias incidunt ducimus sapiente!
-                        <br>
-                        <br>
-                        <br>
-                        <br>
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi possimus sint totam ipsa facere placeat deserunt alias distinctio, exercitationem et animi, quisquam sed in, rem minus! Eligendi quidem labore distinctio?
-                        <br>
-                        <br>
-                        <br>
-                        <br>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Error eos enim molestiae, eius accusamus architecto neque optio aspernatur sint dolores repudiandae labore quis expedita voluptates, eum esse ut, delectus ipsum.
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cupiditate iste nobis cum quidem ex
+                        laboriosam accusamus enim animi vero quaerat at, dicta adipisci saepe vitae reiciendis. Saepe
+                        sed ipsam accusantium?
                     </p>
                 </div>
                 <div class="modal-footer">
