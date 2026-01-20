@@ -103,12 +103,12 @@ if (flightForm) {
     // Prepare data to send
     var requestData = {
       departure: departure,
-      destination: destination,
       departureDate: departureDate,
-      returnDate: returnDate,
-      passengers: passengers,
-      flightType: flightType,
+      destination: destination,
       flightGrade: flightGrade,
+      flightType: flightType,
+      passengers: passengers,
+      returnDate: returnDate,
       api_key: "ACTUAL_API_KEY GOES HERE", // NOTTE: Replace with your actual API key
     };
 
@@ -141,7 +141,7 @@ if (flightForm) {
       })
       .catch((error) => {
         console.error("Error: ", error);
-        alert("Under development. Please try again later.");
+        alert("Service unavailable - currently under development. Please try again later.");
         if (submitBtn) submitBtn.disabled = false;
       });
   });
