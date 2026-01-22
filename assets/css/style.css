@@ -225,7 +225,7 @@ input[type="email"]:focus,
 .carousel-control-next-icon {
     background-color: rgba(15, 10, 10, 0.6);
     border-radius: 25px;
-    padding: 1.6em;
+    padding: 1.4em;
 }
 
 /* INFINITE SCROLLING IMAGES */
