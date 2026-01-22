@@ -218,6 +218,8 @@ Google Dev Tools - used to troubleshoot & test features (including responsivenes
 
 [Shields](https://shields.io/badges) - for making badges added to this README.md file.
 
+[TinyURL](https://tinyurl.com/) - used to shorten the links added to the images of the deals section on the index page.
+
 [SerpAPI](https://serpapi.com/) - attempted to use this to scrape the web for flights but it proved to be tedious.
 
 [Skyscanner](https://developers.skyscanner.net/docs/getting-started/authentication) - the developer was in the process of acquiring an API key and was unable to do so in time, to meet the milestone's deadline.
