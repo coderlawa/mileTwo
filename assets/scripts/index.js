@@ -141,7 +141,7 @@ if (flightForm) {
       })
       .catch((error) => {
         console.error("Error: ", error);
-        alert("Service unavailable - currently under development. Please try again later.");
+        alert("View your Destination on our Map as Flights are Currently Unavailable.");
         if (submitBtn) submitBtn.disabled = false;
       });
   });

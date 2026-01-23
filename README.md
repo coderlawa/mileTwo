@@ -1,4 +1,4 @@
-# MOVEMENTIN - Flights Finding Service
+# MOVEMENTIN - Flights Planning Service
 
 This website has been built to accomodate most visitors needs, regardless of the device used to access it - this means it is robustly responsive.
 
@@ -57,7 +57,7 @@ This website has been built to accomodate most visitors needs, regardless of the
 
 ### Initial Discussion
 
-MOVEMENTIN is a web service for finding airline tickets and holiday bundles based on a site user's desired destination, we also educate travellers about famous facts around their destination.
+MOVEMENTIN is meant to be a web service for finding airline tickets and holiday bundles based on a site user's desired destination, we also educate travellers about famous facts around their destination.
 
 #### Key Info About The Site
 
@@ -127,21 +127,21 @@ Wireframes were created for Mobile & Tablet/Desktop.
 
 This website is made up of one main page and an information page. Both pages are divided into 3 sections in the following ways;
 
-* INDEX PAGE: Flight Booking Form, Interactive Map & Deals sections.
+* INDEX PAGE: Flight Planning Form, Interactive Map & Deals sections.
     * Booking Section I.D. -
-    This section contains the booking form needed by site visitors to find flights. The form allows users input their flight type (i.e. one-way / round trip), departure point, departure date, return date (if applicable), destination point, flight grade (i.e. economy, premium or first class) and number of passengers.
+    This section contains the planning form needed by site visitors to find flights. The form allows users input their flight type (i.e. one-way / round trip), departure point, departure date, return date (if applicable), destination point, flight grade (i.e. economy, premium or first class) and number of passengers.
 
     This section covers [Site Visitors Goal](#site-visitor-goals).
 
-    ![Booking Section](assets/images/booking-form.webp)
+    ![Planning Section](assets/images/booking-form.webp)
 
     * Map Section I.D. -
-    This is the section of the site where users can visualize their locations. The map has been created using the same foundation as [Google Maps](https://google.com/maps) and is highly interactive with the booking form (above) while maintaining its native features. 
+    This is the section of the site where users can visualize their locations. The map has been created using the same foundation as [Google Maps](https://google.com/maps) and is highly interactive with the planning form (above) while maintaining its native features. 
 
     ![Map Section](assets/images/interactive-map.webp)
 
     * Deals I.D. -
-    In this section, site visitors can find holiday packages for varying locations (including their desired location). These deals are not customizable to suit individual requirements.
+    In this section, site visitors can find holiday packages for varying locations (including their desired location). These deals may be customized to suit individual requirements.
 
     ![Deals](assets/images/deals.webp)
 
@@ -257,6 +257,10 @@ To clone this site, do the following;
 The following bugs were discovered while manually testing the sites scripts;
 
 * The Contact Form would pop-up whenever the submit button was clicked even though the required form fields were empty.
+
+* The Find Flight button would also pop-up when clicked even though the form showed an alert to fill required fields.
+
+* The project's URL had to be autorized manually on Google's API console in order to test the funtionality of my code. The same access had to be given to the repository's URL.
 
 * The Return Date Group on the Flight Form remained hidden when the form was reset with the Clear All button.
 
