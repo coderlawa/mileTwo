@@ -202,7 +202,7 @@ input[type="email"]:focus,
 /* INDEX SLIDES */
 
 .carousel img {
-    max-height: 400px;
+    max-height: 40rem;
     object-fit:fill;
 }
 
