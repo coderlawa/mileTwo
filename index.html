@@ -9,8 +9,8 @@
 
     <!-- FAVICON -->
     <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png">
-    <link rel="android-chrome-icon" type="image/png" sizes="192x192" href="assets/favicon/android-chrome-192x192.png">
-    <link rel="android-chrome-icon" type="image/png" sizes="512x512" href="assets/favicon/android-chrome-512x512.png">
+    <link href="assets/favicon/android-chrome-192x192.png" sizes="192x192" rel="icon">
+    <link href="assets/favicon/android-chrome-512x512.png" sizes="512x512" rel="icon">
     <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png">
     <link rel="manifest" href="assets/favicon/site.webmanifest">
@@ -53,6 +53,8 @@
                                 <a class="nav-link links" href="info.html#contact" aria-label="Contact">Contact Us</a>
                             </li>
                         </ul>
+                    </li>
+                </ul>
             </div>
         </div>
     </nav>
@@ -66,18 +68,17 @@
                     <h1 class="display-4 fw-bold">plan your flights here</h1>
                 </div>
                 <div>
-                    <form id="flight-form" action="" method="GET">
+                    <form id="flight-form" method="GET">
                         <div class="row g-3 justify-content-center m-3">
                             <div class="col-12 col-md-6">
                                 <label class="form-label d-block mb-2" id="flightTypeLabel">Flight Type</label>
                                 <div id="flightTypeGroup" class="btn-group w-100" role="group"
                                     aria-label="Flight Type Selection">
-                                    <input type="radio" class="btn-check" name="flight-type" id="one-way"
-                                        autocomplete="off">
+                                    <input type="radio" class="btn-check" name="flight-type" id="one-way">
                                     <label class="btn btn-outline-primary" for="one-way">One-Way</label>
 
                                     <input type="radio" class="btn-check" name="flight-type" id="round-trip"
-                                        autocomplete="off" checked>
+                                       checked>
                                     <label class="btn btn-outline-primary" for="round-trip">Round Trip</label>
                                 </div>
                             </div>
@@ -105,15 +106,15 @@
                                 <div id="flightGradeGroup" class="btn-group w-100" role="group"
                                     aria-label="Flight Grade Selection">
                                     <input type="radio" class="btn-check" name="flight-grade" id="economy"
-                                        autocomplete="off">
+                                        >
                                     <label class="btn btn-outline-primary" for="economy">Eco</label>
 
                                     <input type="radio" class="btn-check" name="flight-grade" id="premium"
-                                        autocomplete="off" checked>
+                                         checked>
                                     <label class="btn btn-outline-primary" for="premium">Prem</label>
 
                                     <input type="radio" class="btn-check" name="flight-grade" id="first"
-                                        autocomplete="off">
+                                        >
                                     <label class="btn btn-outline-primary" for="first">First</label>
                                 </div>
                             </div>
@@ -121,6 +122,7 @@
                                 <label for="passengers" class="form-label">Number of Passengers</label><br>
 
                                 <select id="passengers" name="passengers" class="form-select" required>
+                                    <option value="" disabled selected>Select passengers</option>
                                     <option value="one">1</option>
                                     <option value="two">2</option>
                                     <option value="three">3</option>
@@ -150,6 +152,7 @@
     <!-- MAIN -->
     <!-- INTEGRATED MAP -->
     <section id="map-section" class="section">
+        <h2 class="visually-hidden">Travel Map</h2>  
         <div id="travel-map" class="d-flex justify-content-center">
             <div id="map"></div>
         </div>
@@ -181,7 +184,7 @@
                                 src="assets/images/eiffel-tower.webp" class="d-block w-100"
                                 alt="An image of the Eiffel Tower in Paris, France during the day"></a>
                         <div class="carousel-caption d-none d-md-block">
-                            <h5>Romantic Paris Getaway</h5>
+                            <h3>Romantic Paris Getaway</h3>
                             <p>Experience the City of Love with an exclusive 5-day
                                 package including flights and accommodation.</p>
                         </div>
@@ -192,7 +195,7 @@
                         src="assets/images/tokyo-city.webp" class="d-block w-100"
                                 alt="An image of Tokyo City, Japan at night"></a>
                         <div class="carousel-caption d-none d-md-block">
-                            <h5>Tokyo Explorer</h5>
+                            <h3>Tokyo Explorer</h3>
                             <p>Discover the vibrant culture and technology of Tokyo with a
                                 7-day tour package.</p>
                         </div>
@@ -203,7 +206,7 @@
                         src="assets/images/new-york-city.webp" class="d-block w-100"
                                 alt="An image of Time Square in New York City, USA at night"></a>
                         <div class="carousel-caption d-none d-md-block">
-                            <h5>New York City Lights</h5>
+                            <h3>New York City Lights</h3>
                             <p>Experience the hustle and bustle of NYC with a 4-day city
                                 break package.</p>
                         </div>
@@ -267,11 +270,11 @@
 
     <!-- FLIGHT SEARCH MODAL -->
     <div class="modal fade" id="flightsModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
-        aria-labelledby="flightsModalLabel" aria-hidden="true">
+        aria-labelledby="flightsModalLabel" aria-hidden="true" role="dialog">
         <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title" id="flightsModalLabel">Available Flights:</h5>
+                    <h4 class="modal-title" id="flightsModalLabel">Available Flights:</h4>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body" id="flightsModalBody">

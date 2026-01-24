@@ -6,7 +6,7 @@ This website has been built to accomodate most visitors needs, regardless of the
 
 [View MOVEMENTIN on Github](https://coderlawa.github.io/mileTwo/)
 
-![Project Submission](https://img.shields.io/badge/Submitted-November%202025-orange)
+![Project Submission](https://img.shields.io/badge/Submitted-Jan%202026-orange)
 ![GitHub contributors](https://img.shields.io/badge/Contributors-1-green)
 ![GitHub languages](https://img.shields.io/badge/Languages-3-blue)
 ![HTML validation](https://img.shields.io/badge/w3%20HTML-validated-yellow)
@@ -256,22 +256,30 @@ To clone this site, do the following;
 
 The following bugs were discovered while manually testing the sites scripts;
 
-* The Contact Form would pop-up whenever the submit button was clicked even though the required form fields were empty.
+* The Contact Form's Successful Submission modal would pop-up whenever the submit button was clicked even though the required form fields were empty.
 
-* The Find Flight button would also pop-up when clicked even though the form showed an alert to fill required fields.
+* The Flight's found modal would also pop-up when clicked even though the form showed a user an alert to fill in required fields.
 
 * The project's URL had to be autorized manually on Google's API console in order to test the funtionality of my code. The same access had to be given to the repository's URL.
 
 * The Return Date Group on the Flight Form remained hidden when the form was reset with the Clear All button.
 
+* 
 
-I had an issue with the radio buttons on the flight checking form. The Flight Type and the Flight Grade classed because they we all shared the same NAME - changing names of elements to fit their group solves this problem.
 
-The "Find Flights" button is intentionally longer than the "Clear All" button to draw attention to its importance.
+I had an issue with the radio buttons on the flight checking form. The Flight Type and the Flight Grade classed because they we all shared the same NAME 
+    SOLUTION - changing names of elements to fit their group solves this problem.
+
+
 
 I styled the placeholder on the flight form using "input::placeholder" to target the element.
 
-I used large / larger font-size for both the navbar & btn to add more motion to the site
+I used large / larger font-size for both the navbar & btn to add more dynamism to the site.
+
+![Validated Index page](assets/images/valid-index.png)
+![Validated Info Page](assets/images/valid-info.png)
+![Validated CSS](assets/images/valid-css.png)
+
 
 [Autocomplete Form](https://developers.google.com/maps/documentation/javascript/legacy/supported_types#table3)
 

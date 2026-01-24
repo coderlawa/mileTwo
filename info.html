@@ -9,8 +9,8 @@
 
     <!-- FAVICON -->
     <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png">
-    <link rel="android-chrome-icon" type="image/png" sizes="192x192" href="assets/favicon/android-chrome-192x192.png">
-    <link rel="android-chrome-icon" type="image/png" sizes="512x512" href="assets/favicon/android-chrome-512x512.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="assets/favicon/android-chrome-192x192.png">
+    <link rel="icon" type="image/png" sizes="512x512" href="assets/favicon/android-chrome-512x512.png">
     <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png">
     <link rel="manifest" href="assets/favicon/site.webmanifest">
@@ -35,7 +35,7 @@
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item">
                         <a class="nav-link links" aria-current="page" href="index.html#deals"
@@ -54,6 +54,8 @@
                                 <a class="nav-link links" href="#contact" aria-label="Contact">Contact Us</a>
                             </li>
                         </ul>
+                    </li>
+                </ul>
             </div>
         </div>
     </nav>
@@ -75,7 +77,8 @@
 
     <!-- INFINITE SCROLLING IMAGES -->
     <section id="infinite-scroll-section" class="section">
-        <div id="infinite-scroll" class="carousel" aria-label="Infinite Scrolling Images">
+        <h2 class="visually-hidden">Travel Inspiration Gallery</h2>
+        <div id="infinite-scroll" class="carousel" aria-label="Infinite Scrolling Images" role="region">
             <div class="group">
                 <div class="info-cards"><img src="assets/images/pexels-photo-1.webp" alt="Icy mountains pictured through yellow flower petals by Joshua Woroniecki">
                 </div>
@@ -111,7 +114,7 @@
                         assistance, feel free to reach out to us using the form below or through our contact details.</p>
                 </div>
                 <div class="col-12 col-md-6">
-                    <form id="contact-form" action="" method="POST">
+                    <form id="contact-form" method="POST">
                         <div class="mb-3">
                             <label for="name" class="form-label">Name</label>
                             <input type="text" class="form-control" id="name" name="name" placeholder="Your Name"
@@ -134,7 +137,7 @@
                     </form>
                 </div>
                 <div class="col-12 col-md-6 mt-4 mt-md-0 align-self-center">
-                    <h5>Our Office</h5>
+                    <h3>Our Office</h3>
                     <p>123 Milky Way<br>Wanderlust City, OK 45678<br>Email: yes@no.com<br>Phone: (123)
                         456-7890</p>
                     <div>
@@ -142,7 +145,7 @@
                             <strong>_______________________</strong>
                         </p>
                     </div>
-                    <h5>Business Hours</h5>
+                    <h3>Business Hours</h3>
                     <p>Monday - Friday: 9:00 AM - 6:00 PM<br>Saturday: 10:00 AM - 4:00 PM<br>Sunday:
                         Closed</p>
                 </div>
@@ -193,11 +196,11 @@
     <button id="backToTop" aria-label="backToTopButton"><i class="fa-solid fa-circle-up fa-bounce"></i></button>
 
     <!-- CONTACT US MODAL -->
-    <div class="modal fade" id="messageModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="messageModalLabel" aria-hidden="true">
+    <div class="modal fade" id="messageModal" role="dialog" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="messageModal" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h1 class="modal-title fs-5" id="exampleModalLabel">Success!</h1>
+                    <h1 class="modal-title fs-5" id="exampleModalLabel" aria-labelledby="exampleModalLabel">Success!</h1>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
