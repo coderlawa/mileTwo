@@ -321,7 +321,8 @@ Testing this site was a synchronous process. These features were tested during d
         * Tested the website with screen readers (on Safari) to ensure readable content is available to users with visual challenges.
 
     * Color Contrast
-        * Verified text and background color combinations provide sufficient contrast for readability.
+        * Verified text and background color combinations provide sufficient contrast for readability. This was tested on  [Wave Webaim](https://wave.webaim.org).
+        ![Wave Webaim](assets/images/wave-contrast.png)
 
 6. Security Testing
     * Form Security
@@ -364,6 +365,8 @@ The well-known [W3 HTML](https://validator.w3.org/) was used to validate the all
 3. The Flight Form Modal & Contact Us Form Modal would pop-up if the Find Flight & Send Messages buttons are clicked, respectively. This would happen even when the required fields were blank.
 
     * SOLUTION - Writing better codes to distinguish pages in the javascript files helped resolve these.
+
+4. 
 
 
 ### Known Bugs
