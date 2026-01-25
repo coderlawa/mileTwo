@@ -256,11 +256,7 @@ To clone this site, do the following;
 
 Some of the following bugs were raised during a milestone catch-up call with my Mentor while, manually testing the sites scripts revealed others;
 
-* The Flight's found modal would also pop-up when clicked even though the form showed a user an alert to fill in required fields.
-
 * The Return Date Group on the Flight Form remained hidden when the form was reset with the Clear All button.
-
-* The Contact Form's Successful Submission modal would pop-up whenever the submit button was clicked even though the required form fields were empty.
 
 * The project's URL had to be autorized manually on Google's API console in order to test the funtionality of my code. The same access had to be given to the repository's URL.
 
@@ -357,8 +353,18 @@ The well-known [W3 HTML](https://validator.w3.org/) was used to validate the all
 
 ### Solved Bugs
 
-1. I had an issue with the radio buttons on the flight checking form. The Flight Type and the Flight Grade classed because they we all shared the same NAME 
-    SOLUTION - changing names of elements to fit their group solves this problem.
+1. I had an issue with the radio buttons on the flight form (i.e. Flight Type and Flight Grade) classes because they all shared the same name 
+    
+    * SOLUTION - Grouping elements with other similar buttons solved this problem.
+
+2. Choosing "One-Way" button in the Flight Type made the Return Date group invisible but resetting the form with the Clear All button did not make it visible again.
+
+    * SOLUTION - Adding code to the form reset javascript solved this issue.
+
+3. The Flight Form Modal & Contact Us Form Modal would pop-up if the Find Flight & Send Messages buttons are clicked, respectively. This would happen even when the required fields were blank.
+
+    * SOLUTION - Writing better codes to distinguish pages in the javascript files helped resolve these.
+
 
 ### Known Bugs
 
