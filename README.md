@@ -254,17 +254,92 @@ To clone this site, do the following;
 
 ## Testing
 
-The following bugs were discovered while manually testing the sites scripts;
-
-* The Contact Form's Successful Submission modal would pop-up whenever the submit button was clicked even though the required form fields were empty.
+Some of the following bugs were raised during a milestone catch-up call with my Mentor while, manually testing the sites scripts revealed others;
 
 * The Flight's found modal would also pop-up when clicked even though the form showed a user an alert to fill in required fields.
 
-* The project's URL had to be autorized manually on Google's API console in order to test the funtionality of my code. The same access had to be given to the repository's URL.
-
 * The Return Date Group on the Flight Form remained hidden when the form was reset with the Clear All button.
 
-Testing this site has been a synchronous process 
+* The Contact Form's Successful Submission modal would pop-up whenever the submit button was clicked even though the required form fields were empty.
+
+* The project's URL had to be autorized manually on Google's API console in order to test the funtionality of my code. The same access had to be given to the repository's URL.
+
+Testing this site was a synchronous process. These features were tested during development;
+
+1. Functional Testing
+    * Navigation
+        * Verified all menu links worked as intended, including - About Us & Contact Us buttons
+
+        * Ensured all buttons are clickable and provide users with some interactive feedback. Socail link button open new tabs when clicked.
+
+    * Forms
+        * All input fields in every form is properly validated.
+
+        * Destination field is properly connected to the site's map.
+
+        * Clicking the "Clear All" button properly resets the Flight Form.
+
+        * Clicking the "Find Flights" button prompts users to either fill in empty fields or will retreive flight details when properly integrated.
+
+        * The "Send Message" button on the Contact Us form firstly, validates required fields and triggers a successful submission modal to appear afterwards.
+
+    * Content Verification
+        * All texts on the are grammatically correct.
+
+        * Images & Map load correctly and have correct alt text.
+
+2. Usability Testing
+    * Layout & Design
+        * Checked for consistent layout, font usage and color scheme on all pages and modals.
+
+        * Ensured website's designs are visually appealing and align with brand goals on all pages.
+
+        * Tested every button provides feedback at different stages.
+
+    * User Interaction
+        * Verified interactive elements provide visual feedback when hovered / clicked.
+
+        * Assessed the intuitiveness of the navigation and overall user flow.
+
+3. Compatibility  Testing
+    * Cross-Browser Compatibility
+        * Tested the website on various browsers (Google Chrome, Mozilla Firefox, Safari, Microsoft Edge) to ensure the site maintains its integrity on these different environments.
+
+    * Responsive Design
+        * Verified the website displayed correctly on different devices, screen sizes & resolutions.
+
+        * Checked for proper element alignment, readability and functionality on both portrait and landscape orientations.
+
+4. Performance Testing
+    * Loading Speed
+        * Measured each page's loading time to ensure it meets acceptable performance standards.
+
+    * Media Performance
+        * Ensured images load correctly without degrading page performance.
+
+5. Accessibility Testing
+    * Keyboard Navigation
+        * Confirmed all interactive elements are accessible via keyboard navigation.
+
+    * Screen Reader Compatibility
+        * Tested the website with screen readers (on Safari) to ensure readable content is available to users with visual challenges.
+
+    * Color Contrast
+        * Verified text and background color combinations provide sufficient contrast for readability.
+
+6. Security Testing
+    * Form Security
+        * Ensured form submissions are protected against common vulnerabilities like SQL injection and cross-site scripting (XSS).  
+
+    * HTTPS Verification   
+        * Confirmed the site uses HTTPS to secure data transmission.
+
+7. Content Testing
+    * Accuracy and Relevance
+        * Verified all information, including form labels and holiday deals are accurate.
+
+    * Meta Information
+        * Ensured each page has appropriate meta titles and description for SEO purposes.
 
 
 ### W3 Validators
@@ -288,6 +363,8 @@ The well-known [W3 HTML](https://validator.w3.org/) was used to validate the all
 ### Known Bugs
 
 1. Searching for flights on the flight form prompts a browser alert rather than display results. This is because an actual flight data API has not been connected to the site - the dev is in line for a key from [Skyscanner](https://developers.skyscanner.net/docs/getting-started/authentication).
+
+2. There is currently no pattern for the Email Input on the Contact Us form to use as a template.
 
 ### Lighthouse Test
 
