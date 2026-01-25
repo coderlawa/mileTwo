@@ -37,7 +37,7 @@ h6 {
 p {
     font-family: var(--secondary-font);
     color: var(--primary-color);
-    font-weight: bold;
+    font-size: 1rem;
 }
 
 label {
@@ -149,7 +149,7 @@ input[type="email"],
 textarea::placeholder,
 #message {
     font-family: var(--secondary-font);
-    font-size: 0.9rem;
+    font-size: 0.8rem;
     font-weight: bold;
 }
 
@@ -277,6 +277,10 @@ input[type="email"]:focus,
     to {transform: translateX(-100%);}
 }
 
+#businessHours p {
+    margin: 0;
+}
+
 /* back to top button */
 #backToTop {
     position: fixed;
@@ -337,5 +341,14 @@ footer {
 
     #submitFormGroup {
     margin-top: 1.8vh;
+    }
+
+    #divide {
+        justify-self: center;
+    }
+
+    #businessHours {
+        justify-items: flex-end;
+        justify-self: flex-end;
     }
 }

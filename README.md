@@ -264,7 +264,7 @@ The following bugs were discovered while manually testing the sites scripts;
 
 * The Return Date Group on the Flight Form remained hidden when the form was reset with the Clear All button.
 
-* 
+Testing this site has been a synchronous process 
 
 
 ### W3 Validators
@@ -287,7 +287,7 @@ The well-known [W3 HTML](https://validator.w3.org/) was used to validate the all
 
 ### Known Bugs
 
-
+1. Searching for flights on the flight form prompts a browser alert rather than display results. This is because an actual flight data API has not been connected to the site - the dev is in line for a key from [Skyscanner](https://developers.skyscanner.net/docs/getting-started/authentication).
 
 ### Lighthouse Test
 

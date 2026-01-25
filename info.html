@@ -80,15 +80,22 @@
         <h2 class="visually-hidden">Travel Inspiration Gallery</h2>
         <div id="infinite-scroll" class="carousel" aria-label="Infinite Scrolling Images" role="region">
             <div class="group">
-                <div class="info-cards"><img src="assets/images/pexels-photo-1.webp" alt="Icy mountains pictured through yellow flower petals by Joshua Woroniecki">
+                <div class="info-cards"><img src="assets/images/pexels-photo-1.webp"
+                        alt="Icy mountains pictured through yellow flower petals by Joshua Woroniecki">
                 </div>
-                <div class="info-cards"><img src="assets/images/pexels-photo-2.webp" alt="An aerial view of a seaside town by ollin focus"></div>
-                <div class="info-cards"><img src="assets/images/pexels-photo-3.webp" alt="A solo house on the side of a hill by Ahmet Yuksek"></div>
-                <div class="info-cards"><img src="assets/images/pexels-photo-4.webp" alt="Three hikers walking up a hill by Radis B"></div>
-                <div class="info-cards"><img src="assets/images/pexels-photo-5.webp" alt="An aerial view of an old European town by Anna Wilhelm"></div>
-                <div class="info-cards"><img src="assets/images/pexels-photo-6.webp" alt="People skiing down a mountain at a resort by Goran Svensson">
+                <div class="info-cards"><img src="assets/images/pexels-photo-2.webp"
+                        alt="An aerial view of a seaside town by ollin focus"></div>
+                <div class="info-cards"><img src="assets/images/pexels-photo-3.webp"
+                        alt="A solo house on the side of a hill by Ahmet Yuksek"></div>
+                <div class="info-cards"><img src="assets/images/pexels-photo-4.webp"
+                        alt="Three hikers walking up a hill by Radis B"></div>
+                <div class="info-cards"><img src="assets/images/pexels-photo-5.webp"
+                        alt="An aerial view of an old European town by Anna Wilhelm"></div>
+                <div class="info-cards"><img src="assets/images/pexels-photo-6.webp"
+                        alt="People skiing down a mountain at a resort by Goran Svensson">
                 </div>
-                <div class="info-cards"><img src="assets/images/pexels-photo-7.webp" alt="Hot airballoons taking off into the sky by Sami Aksu"></div>
+                <div class="info-cards"><img src="assets/images/pexels-photo-7.webp"
+                        alt="Hot airballoons taking off into the sky by Sami Aksu"></div>
             </div>
             <div aria-hidden="true" class="group">
                 <div class="info-cards"><img src="assets/images/pexels-photo-1.webp" alt="Photo by Joshua Woroniecki">
@@ -111,7 +118,8 @@
                 <div class="col-12 text-center mb-4">
                     <h2>Contact Us</h2>
                     <p class="lead">We'd love to hear from you! Whether you have questions, feedback, or need
-                        assistance, feel free to reach out to us using the form below or through our contact details.</p>
+                        assistance, feel free to reach out to us using the form below or through our contact details.
+                    </p>
                 </div>
                 <div class="col-12 col-md-6">
                     <form id="contact-form" method="POST">
@@ -130,8 +138,8 @@
                             <textarea class="form-control" id="message" name="message" rows="5"
                                 placeholder="Type your message here" required></textarea>
                         </div>
-                        <button type="submit" class="btn btn-primary w-100"
-                            ><i class="fa-solid fa-paper-plane fa-beat-fade"
+                        <button type="submit" class="btn btn-primary w-100"><i
+                                class="fa-solid fa-paper-plane fa-beat-fade"
                                 style="--fa-animation-duration: 2s; --fa-beat-fade-opacity: 0.1; --fa-beat-fade-scale: 1.2;"></i>
                             Send Message</button>
                     </form>
@@ -141,13 +149,17 @@
                     <p>123 Milky Way<br>Wanderlust City, OK 45678<br>Email: yes@no.com<br>Phone: (123)
                         456-7890</p>
                     <div>
-                        <p>
+                        <p id="divide">
                             <strong>_______________________</strong>
                         </p>
                     </div>
-                    <h3>Business Hours</h3>
-                    <p>Monday - Friday: 9:00 AM - 6:00 PM<br>Saturday: 10:00 AM - 4:00 PM<br>Sunday:
-                        Closed</p>
+                    <div id="businessHours">
+                        <h3>Business Hours</h3>
+                        <p><b>Monday - Friday:</b> 9:00 AM - 6:00 PM</p>
+                        <p><b>Saturday:</b> 10:00 AM - 4:00 PM</p>
+                        <p><b>Sunday:</b> Closed</p>
+                    </div>
+
                 </div>
             </div>
         </div>
@@ -196,11 +208,13 @@
     <button id="backToTop" aria-label="backToTopButton"><i class="fa-solid fa-circle-up fa-bounce"></i></button>
 
     <!-- CONTACT US MODAL -->
-    <div class="modal fade" id="messageModal" role="dialog" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="messageModal" aria-hidden="true">
+    <div class="modal fade" id="messageModal" role="dialog" data-bs-backdrop="static" data-bs-keyboard="false"
+        tabindex="-1" aria-labelledby="messageModal" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h1 class="modal-title fs-5" id="exampleModalLabel" aria-labelledby="exampleModalLabel">Success!</h1>
+                    <h1 class="modal-title fs-5" id="exampleModalLabel" aria-labelledby="exampleModalLabel">Success!
+                    </h1>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
@@ -211,7 +225,7 @@
                 </div>
             </div>
         </div>
-    </div>    
+    </div>
 
     <!-- Set current year -->
     <script>
@@ -270,7 +284,7 @@
         });
     </script>
 
-     <!-- SCRIPT -->
+    <!-- SCRIPT -->
     <script src="assets/scripts/main.js"></script>
 
 </body>
