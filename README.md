@@ -267,8 +267,41 @@ The following bugs were discovered while manually testing the sites scripts;
 * 
 
 
-I had an issue with the radio buttons on the flight checking form. The Flight Type and the Flight Grade classed because they we all shared the same NAME 
+### W3 Validators
+
+The well-known [W3 HTML](https://validator.w3.org/) was used to validate the all HTML codes & [W3 CSS](https://jigsaw.w3.org/css-validator/) was used for validating all CSS codes on this project.
+
+* INDEX PAGE
+![Validated Index page](assets/images/valid-index.png)
+
+* INFO PAGE
+![Validated Info Page](assets/images/valid-info.png)
+
+* CSS
+![Validated CSS](assets/images/valid-css.png)
+
+### Solved Bugs
+
+1. I had an issue with the radio buttons on the flight checking form. The Flight Type and the Flight Grade classed because they we all shared the same NAME 
     SOLUTION - changing names of elements to fit their group solves this problem.
+
+### Known Bugs
+
+
+
+### Lighthouse Test
+
+
+
+## Credits
+
+
+
+## Conclusion
+
+
+
+## Acknowledgement
 
 
 
@@ -276,9 +309,7 @@ I styled the placeholder on the flight form using "input::placeholder" to target
 
 I used large / larger font-size for both the navbar & btn to add more dynamism to the site.
 
-![Validated Index page](assets/images/valid-index.png)
-![Validated Info Page](assets/images/valid-info.png)
-![Validated CSS](assets/images/valid-css.png)
+
 
 
 [Autocomplete Form](https://developers.google.com/maps/documentation/javascript/legacy/supported_types#table3)
