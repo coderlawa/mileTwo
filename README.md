@@ -323,7 +323,7 @@ Testing this site was a synchronous process. These features were tested during d
         * Tested the website with screen readers (on Safari) to ensure readable content is available to users with visual challenges.
 
     * Color Contrast
-        * Verified text and background color combinations provide sufficient contrast for readability. This was tested on  [Wave Webaim](https://wave.webaim.org).
+        * Verified text and background color combinations provide sufficient contrast for readability. This was tested on  [Wave Webaim](https://wave.webaim.org).<br>
         ![Wave Webaim](assets/images/wave-contrast.png)
 
 6. Security Testing
