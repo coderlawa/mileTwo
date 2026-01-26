@@ -381,13 +381,21 @@ The well-known [W3 HTML](https://validator.w3.org/) was used to validate the all
 
 ## Credits
 
+* The inspiration to build this website came from [LAND3](https://www.land3.net) - a different project the developer is involved in constructing.
 
+* The technical know-how to complete the [Infinite Scroller](https://www.youtube.com/watch?v=KD1Yo8a_Qis) on the Information Page was learnt from Coding2GO on [YouTube](https://www.youtube.com).
 
 ## Conclusion
 
-
+The project was visited from a wide range of browsers from different devices in order to extensively test its responsiveness and I am glad to report its has been a huge success so far. I hope you also find the website fun to navigate and interact with and if you wish to contact me, send a message here - <strong> tom.ogun@icloud.com
 
 ## Acknowledgement
+
+I want to thank;
+
+Graeme Taylor - my former mentor on the Code Institute programme for providing me with resources to make my experiece better.
+
+Manuel Romero - my tutor for directing to me to all the personnel available to me during my learning and for granting an extension for me to complete course work.
 
 
 
@@ -402,6 +410,6 @@ I used large / larger font-size for both the navbar & btn to add more dynamism t
 
 [Geocoder](https://developers.google.com/maps/documentation/geocoding/overview)
 
-[Infinite Scroller](https://www.youtube.com/watch?v=KD1Yo8a_Qis)
+
 
 [Youtube Search](https://www.youtube.com/results?search_query=infinite+horizontal+images+scroll+html+css)
