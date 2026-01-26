@@ -24,9 +24,7 @@ This website has been built to accomodate most visitors needs, regardless of the
     * [Imagery](#imagery)
     * [Wireframes](#wireframes)
         * [Home Page](#home-page)
-        * [Profile](#profile)
-        * [Portfolio](#portfolio)
-        * [Contact Us](#contact)
+        * [Information Page](#information-page)
     * [Features & Goals Solved](#features)
     * [Accessibility](#accessibility)
 
@@ -388,6 +386,10 @@ I used the Lighthouse Google Chrome Developer Tool to perform tests on performan
 
 * MOBILE
 ![Lighthouse - Mobile](assets/images/light%20-%20mobile.png)
+
+### JSHint
+
+
 
 ## Credits
 
