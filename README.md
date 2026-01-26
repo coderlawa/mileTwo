@@ -381,7 +381,13 @@ The well-known [W3 HTML](https://validator.w3.org/) was used to validate the all
 
 ### Lighthouse Test
 
+I used the Lighthouse Google Chrome Developer Tool to perform tests on performance, accessibility, best practices of the website. See results below:
 
+* DESKTOP
+![Lighthouse - Desktop](assets/images/light%20-%20desktop.png)
+
+* MOBILE
+![Lighthouse - Mobile](assets/images/light%20-%20mobile.png)
 
 ## Credits
 
@@ -406,13 +412,5 @@ Manuel Romero - my tutor for directing to me to all the personnel available to m
 I styled the placeholder on the flight form using "input::placeholder" to target the element.
 
 I used large / larger font-size for both the navbar & btn to add more dynamism to the site.
-
-
-
-
-
-
-
-
 
 [Youtube Search](https://www.youtube.com/results?search_query=infinite+horizontal+images+scroll+html+css)
