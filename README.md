@@ -216,6 +216,8 @@ Google Dev Tools - used to troubleshoot & test features (including responsivenes
 
 [Autocomplete](https://developers.google.com/maps/documentation/javascript/legacy/supported_types#table3) - provided by Google Maps & used to predict the destinations a user types into the Flight Form.
 
+[Geocoder](https://developers.google.com/maps/documentation/geocoding/overview) - this helps convert any address input in the Destination field into latitude and longitude coordinates.
+
 [Google Fonts](https://fonts.google.com/) - used for all literature on this website.
 
 [Shields](https://shields.io/badges) - for making badges added to this README.md file.
@@ -409,7 +411,7 @@ I used large / larger font-size for both the navbar & btn to add more dynamism t
 
 
 
-[Geocoder](https://developers.google.com/maps/documentation/geocoding/overview)
+
 
 
 
