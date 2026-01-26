@@ -214,6 +214,8 @@ Git - for version control.
 
 Google Dev Tools - used to troubleshoot & test features (including responsiveness & styles).
 
+[Autocomplete](https://developers.google.com/maps/documentation/javascript/legacy/supported_types#table3) - provided by Google Maps & used to predict the destinations a user types into the Flight Form.
+
 [Google Fonts](https://fonts.google.com/) - used for all literature on this website.
 
 [Shields](https://shields.io/badges) - for making badges added to this README.md file.
@@ -406,7 +408,6 @@ I used large / larger font-size for both the navbar & btn to add more dynamism t
 
 
 
-[Autocomplete Form](https://developers.google.com/maps/documentation/javascript/legacy/supported_types#table3)
 
 [Geocoder](https://developers.google.com/maps/documentation/geocoding/overview)
 
