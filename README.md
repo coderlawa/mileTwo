@@ -4,7 +4,7 @@ This website has been built to accomodate most visitors needs, regardless of the
 
 ![Coderlawa on different devices](assets/images/devices.webp)
 
-[View MOVEMENTIN on Github](https://coderlawa.github.io/mileTwo/)
+[View MOVEMENTIN on your Browser](https://coderlawa.github.io/mileTwo/)
 
 ![Project Submission](https://img.shields.io/badge/Submitted-Jan%202026-orange)
 ![GitHub contributors](https://img.shields.io/badge/Contributors-1-green)
