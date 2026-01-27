@@ -59,28 +59,31 @@ MOVEMENTIN is meant to be a web service for finding airline tickets and holiday 
 
 #### Key Info About The Site
 
-* Real time flights search
+* Real time flights search - pending
 * An interactive map for choosing destination
 * Holiday bundles discovery
 * A contact box for dropping messages
 * Social links for further contact
 * Brief information about the site's services
-* Image of scenic locations scrolling continuously
-* 
+* Image of scenic locations continuously scrolling 
 
 ### User Stories
 
-#### Client Goals
+#### Client Goals (site owner)
 
-* 
+* Ability to view the website on various screen real-estate.
+* Display multiple flight options to site visitors.
 
 #### Site Visitor Goals
 
-* 
+* I want to find and begin a flight booking process.
+* I want to visualize my destination.
+* I want to discover holiday deals in tourist hotspots.
+* I want to send a message to customer service.
 
-#### Frequent & Returning Visitor Goals
+#### Frequent & Returning Visitor Goals (future developments)
 
-* Account creation is a future development opportunity for Movementin.
+* Account creation to help store site user's flight log and travel points.
 
 ---
 
