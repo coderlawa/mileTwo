@@ -41,7 +41,7 @@ This website has been built to accomodate most visitors needs, regardless of the
     * [W3 Validators](#w3-validators)
     * [Solved Bugs](#solved-bugs)
     * [Known Bugs](#known-bugs)
-    * [Lighthouse](#lighthouse)
+    * [Lighthouse](#lighthouse-test)
     * [JSHint](#jshint)
 
 * [Credits](#credits)
@@ -371,7 +371,9 @@ The well-known [W3 HTML](https://validator.w3.org/) was used to validate the all
 
     * SOLUTION - Writing better codes to distinguish pages in the javascript files helped resolve these.
 
-4. 
+4. The infinite scrolling images on the [Information Page](#information-page) appeared as double on smaller screens.
+
+    * SOLUTION - Using flex-direction for screens less than 768px cleared the issue. 
 
 
 ### Known Bugs
@@ -392,7 +394,13 @@ I used the Lighthouse Google Chrome Developer Tool to perform tests on performan
 
 ### JSHint
 
+There are 23 functions in this file.
 
+Function with the largest signature take 2 arguments, while the median is 0.
+
+Largest function has 30 statements in it, while the median is 6.
+
+The most complex function has a cyclomatic complexity value of 7 while the median is 2.
 
 ## Credits
 
