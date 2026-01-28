@@ -55,7 +55,7 @@ This website has been built to accomodate most visitors needs, regardless of the
 
 ### Initial Discussion
 
-MOVEMENTIN is meant to be a web service for finding airline tickets and holiday bundles based on a site user's desired destination, we also educate travellers about famous facts around their destination.
+MOVEMENTIN is meant to be a web service for finding airline tickets and holiday bundles based on a site user's desired destination, we intend to share famous facts with our users about their destinations.
 
 #### Key Info About The Site
 
@@ -73,6 +73,7 @@ MOVEMENTIN is meant to be a web service for finding airline tickets and holiday 
 
 * Ability to view the website on various screen real-estate.
 * Display multiple flight options to site visitors.
+* A feedback loop from site users so our service can be improved.
 
 #### Site Visitor Goals
 
@@ -83,7 +84,7 @@ MOVEMENTIN is meant to be a web service for finding airline tickets and holiday 
 
 #### Frequent & Returning Visitor Goals (future developments)
 
-* Account creation to help store site user's flight log and travel points.
+* Account creation to help store site user's flight details and travel points.
 
 ---
 
@@ -229,6 +230,8 @@ Google Dev Tools - used to troubleshoot & test features (including responsivenes
 
 [Skyscanner](https://developers.skyscanner.net/docs/getting-started/authentication) - the developer was in the process of acquiring an API key and was unable to do so in time, to meet the milestone's deadline.
 
+[Youtube Search](https://www.youtube.com/results?search_query=infinite+horizontal+images+scroll+html+css) - resource to additional scrolling designs by other CSS developers
+
 - - -
 
 ## Deployment & Local Development
@@ -280,7 +283,11 @@ Testing this site was a synchronous process. These features were tested during d
 
         * Clicking the "Clear All" button properly resets the Flight Form.
 
-        * Clicking the "Find Flights" button prompts users to either fill in empty fields or will retreive flight details when properly integrated.
+        * Clicking the "Find Flights" button prompts users to either fill in empty fields or will eventually retreive flight details when fully developed.
+
+        * The map correctly pin-points a user's desired destination.
+
+        * Selecting a location on the map populates the destination field on the Flight Form.
 
         * The "Send Message" button on the Contact Us form firstly, validates required fields and triggers a successful submission modal to appear afterwards.
 
@@ -418,12 +425,8 @@ I want to thank;
 
 Graeme Taylor - my former mentor on the Code Institute programme for providing me with resources to make my experiece better.
 
-Manuel Romero - my tutor for directing to me to all the personnel available to me during my learning and for granting an extension for me to complete course work.
+Manuel Romero - my tutor for directing to me to all the personnel available to me during my learning and for granting an extension for me to complete all course work.
 
+## Dedication
 
-
-I styled the placeholder on the flight form using "input::placeholder" to target the element.
-
-I used large / larger font-size for both the navbar & btn to add more dynamism to the site.
-
-[Youtube Search](https://www.youtube.com/results?search_query=infinite+horizontal+images+scroll+html+css)
+I dedicate this project to Mrs. Jokotola Ojosipe-Ogundimu who fell gravely ill while I started this project and eventually passed away before I could finish.
