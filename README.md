@@ -417,7 +417,7 @@ The most complex function has a cyclomatic complexity value of 7 while the media
 
 ## Conclusion
 
-The project was visited from a wide range of browsers from different devices in order to extensively test its responsiveness and I am glad to report its has been a huge success so far. I hope you also find the website fun to navigate and interact with and if you wish to contact me, send a message here - <strong> tom.ogun@icloud.com
+The project was visited from a wide range of browsers from different devices in order to extensively test its responsiveness and I am glad to report its has been a huge success so far. I hope you also find the website fun to navigate and interact with and if you wish to contact me, send a message here - <b> tom.ogun@icloud.com </b>
 
 ## Acknowledgement
 
@@ -429,4 +429,4 @@ Manuel Romero - my tutor for directing to me to all the personnel available to m
 
 ## Dedication
 
-I dedicate this project to Mrs. Jokotola Ojosipe-Ogundimu who fell gravely ill while I started this project and eventually passed away before I could finish.
+I dedicate this project to <b> Mrs. Jokotola Ojosipe-Ogundimu </b> who fell gravely ill while I started this project and eventually passed away on the 29th of June, 2025 - before I complete my work.
