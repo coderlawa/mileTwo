@@ -1,4 +1,4 @@
-List of major international airports arranged alphabetically by the airport's common name, along with their IATA code.
+List of major international airports arranged alphabetically by the airport's common name, with IATA code.
 
 ---
 
