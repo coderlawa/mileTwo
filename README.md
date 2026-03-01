@@ -262,6 +262,10 @@ To clone this site, do the following;
 
 ## Testing
 
+There are 2 types of tests that can be done for web development;
+1. Manual Testing / Behaviour-Driven Development
+2. Automatic Testing / Test-Driven Development
+
 Some of the following bugs were raised during a milestone catch-up call with my Mentor while, manually testing the sites scripts revealed others;
 
 * The Return Date Group on the Flight Form remained hidden when the form was reset with the Clear All button.
