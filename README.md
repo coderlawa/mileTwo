@@ -279,10 +279,10 @@ There are 2 types of tests that can be done for web development;
 
 #### Site Visitor Goals
 
-* I want to find and begin a flight booking process : .
-* I want to visualize my destination.
-* I want to discover holiday deals in tourist hotspots.
-* I want to send a message to customer service.
+* I want to find and begin a flight booking process : we are able to input information such as flight type, departure location, departure & return dates, destination location, flight grade and the number of passengers. At the moment, the site does not return any useful information because there is no API key.
+* I want to visualize my destination : this feature was tested by inputting information about the destination on the flight form to show it interacts with the map.
+* I want to discover holiday deals in tourist hotspots : this feature does not currently exist on the site & cannot be tested.
+* I want to send a message to customer service : we tested this feature on the Information page by checking validations of the input fields on the contact form. Feedback has also been tested to let users know when their message has been sent.
 
 Some of the following bugs were raised during a milestone catch-up call with my Mentor while, manually testing the sites scripts revealed others;
 
