@@ -264,7 +264,25 @@ To clone this site, do the following;
 
 There are 2 types of tests that can be done for web development;
 1. Manual Testing / Behaviour-Driven Development
+    This development framework has been employed for the creation of our website because it helps to map out a User's journey. It follows the flow of "As A ...", "I want ...", "So that ...". This testing mindset is essential for putting the developer in the shoes of the final end-user. It does not require any special software to run tests.
+
 2. Automatic Testing / Test-Driven Development
+    This testing framework flows thus; Given -> When -> Then. It is widely employed as the best mindset for planning out the flow of backend logic. These tests should be written before the software is developed as it guides the development process. It requires software to run the tests.
+
+### Manual Tests / Behaviour-Driven Development for [User Stories](#user-stories)
+
+#### Client Goals (site owner)
+
+* Ability to view the website on various screen real-estate : this was tested using the browser's native inspect feature.
+* Display multiple flight options to site visitors : this feature could not be tested because the developer does not have an API key from [Skyscanner](https://developers.skyscanner.net/docs/getting-started/authentication) yet.
+* A feedback loop from site users so our service can be improved : this product exists on the Contact Us section and has had its validations tested even though it is not currently connected to an external.
+
+#### Site Visitor Goals
+
+* I want to find and begin a flight booking process : .
+* I want to visualize my destination.
+* I want to discover holiday deals in tourist hotspots.
+* I want to send a message to customer service.
 
 Some of the following bugs were raised during a milestone catch-up call with my Mentor while, manually testing the sites scripts revealed others;
 
